@@ -5,7 +5,6 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  Alert,
 } from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {useDispatch} from 'react-redux';
@@ -17,6 +16,7 @@ const SignUp = ({navigation}) => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleSignUp = async () => {
     try {
@@ -34,14 +34,20 @@ const SignUp = ({navigation}) => {
 
       const response = await registerUser(userData);
 
-      dispatch(signUp(response)); // Assuming the response contains user data
+      dispatch(signUp(response));
 
-      Alert.alert('User Registered Successfully');
+      setMessage('User Registered Successfully');
+      setTimeout(() => setMessage(''), 3000);
+
       navigation.navigate('Login');
     } catch (error) {
       console.error('Registration failed:', error.message);
-      Alert.alert('Registration Failed', error.message);
+      setMessage('Registration Failed: ' + error.message);
     }
+  };
+
+  const dismissMessage = () => {
+    setMessage('');
   };
 
   return (
@@ -49,47 +55,55 @@ const SignUp = ({navigation}) => {
       contentContainerStyle={styles.container}
       resetScrollToCoords={{x: 0, y: 0}}
       scrollEnabled={false}>
+      {message !== '' && (
+        <TouchableOpacity
+          style={[
+            styles.notification,
+            message.includes('Successfully')
+              ? styles.notificationSuccess
+              : styles.notificationError,
+          ]}
+          onPress={dismissMessage}>
+          <Text style={styles.notificationText}>{message}</Text>
+        </TouchableOpacity>
+      )}
       <View style={styles.headingContainer}>
         <Text style={styles.headingText}>Personal Information</Text>
         <Text style={styles.subHeadingText}>Please fill the following</Text>
       </View>
       <View style={styles.inputContainer}>
-        <View>
-          <Text style={styles.label}>First Name</Text>
-          <TextInput
-            style={styles.input}
-            value={firstName}
-            placeholder="Enter your First Name"
-            onChangeText={text => setFirstName(text)}
-          />
-        </View>
-        <View>
-          <Text style={styles.label}>Last Name</Text>
-          <TextInput
-            style={styles.input}
-            value={lastName}
-            placeholder="Enter your Last Name"
-            onChangeText={text => setLastName(text)}
-          />
-        </View>
-        <View>
-          <Text style={styles.label}>Email Address</Text>
-          <TextInput
-            style={styles.input}
-            placeholder="Enter your Email"
-            value={email}
-            onChangeText={text => setEmail(text)}
-          />
-        </View>
+        <Text style={styles.label}>First Name</Text>
+        <TextInput
+          style={styles.input}
+          value={firstName}
+          placeholder="Enter your First Name"
+          onChangeText={text => setFirstName(text)}
+        />
+        <Text style={styles.label}>Last Name</Text>
+        <TextInput
+          style={styles.input}
+          value={lastName}
+          placeholder="Enter your Last Name"
+          onChangeText={text => setLastName(text)}
+        />
+        <Text style={styles.label}>Email Address</Text>
+        <TextInput
+          style={styles.input}
+          placeholder="Enter your Email"
+          value={email}
+          onChangeText={text => setEmail(text)}
+        />
+      </View>
+      <View style={styles.buttonContainer}>
         <TouchableOpacity onPress={handleSignUp} style={styles.submitButton}>
           <Text style={styles.submitButtonText}>SignUp</Text>
         </TouchableOpacity>
-        <Text style={styles.signInText}>
-          Already have an account?{' '}
+        <View style={styles.loginContainer}>
+          <Text style={styles.loginText}>Already have an account? </Text>
           <TouchableOpacity onPress={() => navigation.navigate('Login')}>
-            <Text style={styles.signInLink}>Login</Text>
+            <Text style={styles.loginLink}>Login</Text>
           </TouchableOpacity>
-        </Text>
+        </View>
       </View>
     </KeyboardAwareScrollView>
   );
@@ -117,11 +131,11 @@ const styles = StyleSheet.create({
   },
   inputContainer: {
     flex: 0.6,
-    justifyContent: 'space-between',
   },
   label: {
     fontFamily: 'Poppins-Medium',
     color: '#000000',
+    marginTop: 15,
     fontSize: 14,
   },
   input: {
@@ -133,9 +147,15 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     marginTop: 2,
   },
+  buttonContainer: {
+    marginTop: 10,
+    alignItems: 'center',
+  },
   submitButton: {
     backgroundColor: '#1C6758',
     borderRadius: 10,
+    marginBottom: 10,
+    width: '100%',
   },
   submitButtonText: {
     fontSize: 25,
@@ -144,17 +164,41 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginVertical: 10,
   },
-  signInText: {
+  loginContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  loginText: {
     fontFamily: 'Poppins-Medium',
     color: '#000000',
     fontSize: 14,
     alignSelf: 'center',
   },
-  signInLink: {
+  loginLink: {
     fontFamily: 'Poppins-Bold',
     textDecorationLine: 'underline',
-    color: '#000000',
+    color: '#1C6758',
     fontSize: 14,
+  },
+  notification: {
+    position: 'absolute',
+    top: 20,
+    left: 20,
+    right: 20,
+    padding: 10,
+    borderRadius: 5,
+    zIndex: 999,
+  },
+  notificationText: {
+    color: 'white',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+  notificationSuccess: {
+    backgroundColor: 'green',
+  },
+  notificationError: {
+    backgroundColor: 'red',
   },
 });
 

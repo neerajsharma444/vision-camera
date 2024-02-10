@@ -1,14 +1,15 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import {useDispatch} from 'react-redux';
-import {logout} from '../Redux/reducers/authSlice';
+import {logoutUser} from '../Redux/reducers/authSlice';
 
-const Logout = () => {
+const Logout = ({navigation}) => {
   const dispatch = useDispatch();
 
   const handleLogout = () => {
-    dispatch(logout());
+    dispatch(logoutUser());
     console.log('Logout successful');
+    navigation.navigate('Login');
   };
 
   return (

@@ -43,10 +43,8 @@ export const signUp = userData => async dispatch => {
 
 export const logIn = (firstName, lastName) => async dispatch => {
   try {
-    // Fetch all users
     const users = await fetchUsers();
 
-    // Check if there's a user with the provided first and last names
     const matchedUser = users.find(
       user => user.firstName === firstName && user.lastName === lastName,
     );
@@ -59,7 +57,6 @@ export const logIn = (firstName, lastName) => async dispatch => {
         `Welcome, ${matchedUser.firstName} ${matchedUser.lastName}!`,
       );
     } else {
-      // No user found with the provided credentials
       throw new Error('No user found with the provided credentials');
     }
   } catch (error) {

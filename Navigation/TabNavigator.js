@@ -4,9 +4,9 @@ import {StyleSheet} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Feed from '../Screens/Feed';
 import CreatePost from '../Screens/CreatePost';
-// import Profile from '../Screens/Profile';
+import Profile from '../Screens/Profile';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import EditProfile from '../Screens/EditProfile';
+import {Icon} from '@rneui/base';
 
 const Tab = createBottomTabNavigator();
 
@@ -18,7 +18,10 @@ const TabNavigator = () => {
         component={Feed}
         options={{
           headerShown: false,
-          tabBarIcon: () => <FontAwesome name="user" size={22} color="#000" />,
+          tabBarIcon: () => (
+            <FontAwesome name="user" size={22} color="#000" />
+            // <Icon name="user" type="FontAwesome" size={22} color="black" />
+          ),
         }}
       />
       <Tab.Screen
@@ -30,8 +33,8 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="EditProfile"
-        component={EditProfile}
+        name="Profile"
+        component={Profile}
         options={{
           headerShown: false,
           tabBarIcon: () => <FontAwesome name="user" size={22} color="#000" />,

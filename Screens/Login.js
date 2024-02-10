@@ -6,7 +6,6 @@ import {
   TouchableOpacity,
   KeyboardAvoidingView,
   StyleSheet,
-  Alert,
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {logIn} from '../Redux/reducers/authSlice';
@@ -16,13 +15,15 @@ const Login = ({navigation}) => {
   const dispatch = useDispatch();
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
+  const [notification, setNotification] = useState(null);
+
+  const handleNotification = (type, message) => {
+    setNotification({type, message});
+  };
 
   const handleLogin = async () => {
     try {
-      // Fetch the list of users from the backend
       const users = await fetchUsers();
-
-      // Find the user with matching first and last names
       const matchingUser = users.find(
         user =>
           user.firstName.toLowerCase() === firstName.toLowerCase() &&
@@ -36,18 +37,35 @@ const Login = ({navigation}) => {
       // Dispatch the logIn action if the user is found
       await dispatch(logIn({firstName, lastName}));
 
-      // Navigate to the authenticated screen
-      navigation.navigate('DrawerNavigator');
-
-      Alert.alert('You are now logged in', `${firstName} ${lastName}`);
+      handleNotification(
+        'success',
+        'You are now logged in...Tap to move to new screen',
+      );
     } catch (error) {
       console.error('Login failed:', error);
-      Alert.alert('Login Failed', error.message);
+      handleNotification('error', 'Login Failed: ' + error.message);
     }
+  };
+
+  const dismissNotification = () => {
+    setNotification(null);
+    navigation.navigate('DrawerNavigator');
   };
 
   return (
     <KeyboardAvoidingView style={styles.container}>
+      {notification && (
+        <TouchableOpacity
+          style={[
+            styles.notification,
+            notification.type === 'success'
+              ? styles.notificationSuccess
+              : styles.notificationError,
+          ]}
+          onPress={dismissNotification}>
+          <Text style={styles.notificationText}>{notification.message}</Text>
+        </TouchableOpacity>
+      )}
       <View style={styles.headingContainer}>
         <Text style={styles.headingText}>Login</Text>
         <Text style={styles.subHeadingText}>Enter your Credentials</Text>
@@ -68,16 +86,16 @@ const Login = ({navigation}) => {
           onChangeText={text => setLastName(text)}
         />
       </View>
-      <View>
+      <View style={styles.buttonContainer}>
         <TouchableOpacity style={styles.submitButton} onPress={handleLogin}>
           <Text style={styles.submitButtonText}>Login</Text>
         </TouchableOpacity>
-        <Text style={styles.signUpText}>
-          Don't have an account?{' '}
+        <View style={styles.signUpContainer}>
+          <Text style={styles.signUpText}>Don't have an account? </Text>
           <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
             <Text style={styles.signUpLink}>Sign Up</Text>
           </TouchableOpacity>
-        </Text>
+        </View>
       </View>
     </KeyboardAvoidingView>
   );
@@ -110,6 +128,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Medium',
     color: '#000000',
     fontSize: 14,
+    marginTop: 15,
   },
   input: {
     paddingLeft: 15,
@@ -120,22 +139,30 @@ const styles = StyleSheet.create({
     borderWidth: 0.5,
     marginTop: 2,
   },
+  buttonContainer: {
+    marginTop: 10,
+    alignItems: 'center',
+  },
   submitButton: {
     backgroundColor: '#1C6758',
     borderRadius: 10,
+    marginBottom: 10,
+    width: '100%',
   },
   submitButtonText: {
     fontSize: 25,
     color: 'white',
-    width: '100%',
     textAlign: 'center',
     marginVertical: 10,
+  },
+  signUpContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
   },
   signUpText: {
     fontFamily: 'Poppins-Medium',
     color: '#000000',
     fontSize: 14,
-    alignSelf: 'center',
   },
   signUpLink: {
     fontFamily: 'Poppins-Bold',
@@ -143,6 +170,36 @@ const styles = StyleSheet.create({
     color: '#1C6758',
     fontSize: 14,
   },
+  notification: {
+    position: 'absolute',
+    top: 20,
+    left: 20,
+    right: 20,
+    padding: 10,
+    borderRadius: 10,
+    zIndex: 999,
+    borderWidth: 1,
+    borderColor: '#333',
+    backgroundColor: '#fff',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+  },
+  notificationText: {
+    color: '#333',
+    fontSize: 16,
+    textAlign: 'center',
+  },
+  notificationSuccess: {
+    backgroundColor: '#4CAF50',
+  },
+  notificationError: {
+    backgroundColor: '#f44336',
+  },
 });
-
 export default Login;

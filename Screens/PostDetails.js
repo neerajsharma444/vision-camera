@@ -21,7 +21,7 @@ const PostDetails = ({post, handleCommentIconPress, selectedPost, onClose}) => {
           style={styles.commentProfileImage}
         />
         <Text style={styles.commentUsername}>
-          <Text style={{fontWeight: 'bold'}}>
+          <Text style={styles.boldText}>
             {item.owner.firstName} {item.owner.lastName}
           </Text>
           : {item.message}
@@ -169,6 +169,9 @@ const styles = StyleSheet.create({
     color: '#1C6758',
     fontWeight: 'bold',
     fontSize: 16,
+  },
+  boldText: {
+    fontWeight: 'bold',
   },
 });
 

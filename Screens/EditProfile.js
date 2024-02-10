@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {useSelector} from 'react-redux';
 import {
   StyleSheet,
   Text,
@@ -6,12 +7,11 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
-  ScrollView,
 } from 'react-native';
-import {useSelector} from 'react-redux';
 
 const EditProfile = () => {
   const userState = useSelector(state => state.auth.user);
+  console.log('EditProfile', userState);
 
   const [registerUserData, setRegisterUserData] = useState(null);
   const [firstName, setFirstName] = useState('');
@@ -21,69 +21,66 @@ const EditProfile = () => {
   const [region, setRegion] = useState('');
 
   useEffect(() => {
-    const fetchUserData = async () => {
-      try {
-        const response = await fetch(
-          `https://dummyapi.io/data/v1/user/${userState[0].id}/post`,
-          {
-            headers: {
-              'Content-Type': 'application/json',
-              'app-id': '65a941a1ba3fef5e4652e747',
+    if (userState) {
+      const fetchUserData = async () => {
+        try {
+          const response = await fetch(
+            `https://dummyapi.io/data/v1/user/${userState[0].id}/post`,
+            {
+              headers: {
+                'Content-Type': 'application/json',
+                'app-id': '65a941a1ba3fef5e4652e747',
+              },
             },
-          },
-        );
+          );
 
-        if (response.ok) {
-          const data = await response.json();
-          setRegisterUserData(data);
-        } else {
-          console.error('Error fetching user data:', response.status);
+          if (response.ok) {
+            const data = await response.json();
+            setRegisterUserData(data);
+          } else {
+            console.error('Error fetching user data:', response.status);
+          }
+        } catch (error) {
+          console.error('Error during API call:', error);
         }
-      } catch (error) {
-        console.error('Error during API call:', error);
-      }
-    };
+      };
 
-    fetchUserData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+      fetchUserData();
+    }
+  }, [userState]);
 
   const updateProfile = async () => {
-    try {
-      if (!userState || !userState[0]?.id) {
-        console.error('User ID not found');
-        return;
-      }
+    if (!userState) {
+      console.error('User state is null');
+      return;
+    }
 
+    try {
+      console.log('Sending PUT request...');
       const requestOptions = {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
-          'app-id': '65a941a1ba3fef5e4652e747',
+          'app-id': '65b2433a2fe979ac57fe617f',
         },
         body: JSON.stringify({
           firstName: firstName,
           lastName: lastName,
-          contact: contact,
-          gender: gender,
-          region: region,
         }),
       };
 
-      console.log('Sending PUT request...');
-      console.log('requestOptions:', requestOptions);
-
       const response = await fetch(
-        `https://dummyapi.io/data/v1/user/${userState[0]?.id}`,
+        `https://dummyapi.io/data/v1/user/${userState[0].id}`,
         requestOptions,
       );
+
       console.log('PUT request completed.');
 
+      const data = await response.json();
+
       if (response.ok) {
-        const data = await response.json();
         console.log('Update successful:', data);
       } else {
-        const data = await response.json();
         console.error('Update failed:', data);
       }
     } catch (error) {
@@ -92,141 +89,129 @@ const EditProfile = () => {
   };
 
   return (
-    <ScrollView>
-      <View style={styles.mainContainer}>
-        <View style={styles.userContainer}>
-          {/* <Image
-            style={styles.img}
-            source={
-              registerUserData?.data?.[0]?.owner?.picture
-                ? {uri: registerUserData?.data?.[0]?.owner?.picture}
-                : require('../Assets/images/user-default.jpg')
-            }
-          /> */}
-          <Text style={styles.userInfo}>
-            {registerUserData?.data?.[0]?.owner?.firstName}{' '}
-            {registerUserData?.data?.[0]?.owner?.lastName}
-          </Text>
-        </View>
-
-        <View style={styles.inputContainer}>
-          <View style={styles.inputWrapper}>
-            <Text style={styles.inputLabel}>First Name</Text>
-            <TextInput
-              style={styles.input}
-              value={firstName}
-              onChangeText={text => setFirstName(text)}
-            />
-          </View>
-
-          <View style={styles.inputWrapper}>
-            <Text style={styles.inputLabel}>Last Name</Text>
-            <TextInput
-              style={styles.input}
-              value={lastName}
-              onChangeText={text => setLastName(text)}
-            />
-          </View>
-
-          <View style={styles.inputWrapper}>
-            <Text style={styles.inputLabel}>Phone Number</Text>
-            <TextInput
-              style={styles.input}
-              value={contact}
-              onChangeText={text => setContact(text)}
-            />
-          </View>
-
-          <View style={styles.inputWrapper}>
-            <Text style={styles.inputLabel}>Gender</Text>
-            <TextInput
-              style={styles.input}
-              value={gender}
-              onChangeText={text => setGender(text)}
-            />
-          </View>
-
-          <View style={styles.inputWrapper}>
-            <Text style={styles.inputLabel}>Region</Text>
-            <TextInput
-              style={styles.input}
-              value={region}
-              onChangeText={text => setRegion(text)}
-            />
-          </View>
-
-          <TouchableOpacity onPress={updateProfile} style={styles.button}>
-            <Text style={styles.buttonText}>Update</Text>
+    <View style={styles.mainContainer}>
+      {/* Render loading indicator or message if userState is null */}
+      {!userState ? (
+        <Text>Loading...</Text>
+      ) : (
+        <>
+          {/* Render profile editing form */}
+          {/* Replace this with your profile editing UI */}
+          <Text>Profile Editing Form</Text>
+          {/* Example input for first name */}
+          <TextInput
+            value={firstName}
+            onChangeText={text => setFirstName(text)}
+            placeholder="First Name"
+          />
+          {/* Example input for last name */}
+          <TextInput
+            value={lastName}
+            onChangeText={text => setLastName(text)}
+            placeholder="Last Name"
+          />
+          {/* Button to trigger profile update */}
+          <TouchableOpacity onPress={updateProfile}>
+            <Text>Update Profile</Text>
           </TouchableOpacity>
-        </View>
-      </View>
-    </ScrollView>
+        </>
+      )}
+    </View>
   );
 };
 
+export default EditProfile;
+
 const styles = StyleSheet.create({
   mainContainer: {
-    flex: 0.97,
-    paddingHorizontal: 20,
-    backgroundColor: '#f8f8f8',
+    flex: 1,
+    padding: 10,
+    // backgroundColor:'green',
   },
+
   userContainer: {
     flexDirection: 'row',
     alignItems: 'center',
+    // justifyContent:'center',
   },
+
   img: {
-    height: 50,
-    width: 50,
+    height: 70,
+    width: 70,
+    borderRadius: 100,
   },
-  userInfo: {
-    fontSize: 16,
-    color: '#333',
-    fontWeight: '600',
-    fontFamily: 'Poppins-SemiBold',
-  },
+
+  // cameraImg: {
+  //   height: 20,
+  //   width: 20,
+  //   position: 'absolute',
+  //   bottom: -30,
+  //   right: -10,
+  // },
+
   inputContainer: {
-    flex: 1,
-    backgroundColor: '#fff',
+    // flex: 0,
     borderRadius: 10,
-    padding: 20,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-    elevation: 5,
+    justifyContent: 'space-around',
+    // backgroundColor: 'green',
   },
-  inputWrapper: {
+
+  txtContainer: {
+    marginTop: 30,
+  },
+
+  inputText: {
+    fontSize: 14,
+    color: 'black',
+    fontWeight: '500',
+    fontFamily: 'Poppins',
+    marginBottom: 10,
+  },
+
+  textInput: {
+    width: '45%',
+    marginTop: 10,
+    flexDirection: 'column',
+    // backgroundColor:'green',
+  },
+
+  inputStyle2: {
     width: '100%',
-    marginBottom: 20,
+    borderRadius: 10,
+    backgroundColor: '#F2F2F2',
   },
-  inputLabel: {
-    marginBottom: 5,
-    color: '#1C6758',
-    fontFamily: 'Poppins-Medium',
-    fontSize: 16,
+
+  inputStyle: {
+    backgroundColor: '#F2F2F2',
+    borderRadius: 10,
+    borderWidth: 0.5,
+    borderColor: '#006175',
   },
-  input: {
+
+  inputStyle1: {
+    borderRadius: 10,
+    backgroundColor: '#F2F2F2',
+  },
+
+  btnContainer: {
     width: '100%',
-    backgroundColor: '#f2f2f2',
-    borderRadius: 5,
-    paddingHorizontal: 15,
-    paddingVertical: 12,
-    fontSize: 16,
-  },
-  button: {
+    marginTop: 30,
+    borderRadius: 10,
     backgroundColor: '#1C6758',
-    borderRadius: 10,
-    paddingVertical: 15,
   },
-  buttonText: {
-    color: '#fff',
+
+  btnTxt: {
     fontSize: 18,
+    fontWeight: '600',
+    color: '#FFFFFF',
     textAlign: 'center',
-    fontFamily: 'Poppins-SemiBold',
+    fontFamily: 'Poppins',
+  },
+
+  postContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    //  backgroundColor:'green',
   },
 });
-
-export default EditProfile;
