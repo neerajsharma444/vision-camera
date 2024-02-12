@@ -1,14 +1,8 @@
 import React from 'react';
-import {Provider} from 'react-redux';
-import store from './Redux/store';
-import RootNavigator from './Navigation/RootNavigator';
+import CreatePost from './Screens/CameraScreen';
 
 const App = () => {
-  return (
-    <Provider store={store}>
-      <RootNavigator />
-    </Provider>
-  );
+  return <CreatePost />;
 };
 
 export default App;
