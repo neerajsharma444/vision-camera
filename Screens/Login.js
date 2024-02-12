@@ -45,7 +45,7 @@ const Login = ({navigation}) => {
       );
 
       // Redirect to another screen after successful login
-      navigation.navigate('Home');
+      navigation.navigate('DrawerNavigator');
     } catch (error) {
       console.error('Login failed:', error);
       handleNotification('error', 'Login Failed: ' + error.message);
