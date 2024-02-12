@@ -6,7 +6,6 @@ import Feed from '../Screens/Feed';
 import CreatePost from '../Screens/CreatePost';
 import Profile from '../Screens/Profile';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import {Icon} from '@rneui/base';
 
 const Tab = createBottomTabNavigator();
 

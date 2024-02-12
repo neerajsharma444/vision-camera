@@ -10,6 +10,7 @@ import {
 import {useDispatch} from 'react-redux';
 import {logIn} from '../Redux/reducers/authSlice';
 import {fetchUsers} from '../Services/api';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const Login = ({navigation}) => {
   const dispatch = useDispatch();
@@ -36,11 +37,15 @@ const Login = ({navigation}) => {
 
       // Dispatch the logIn action if the user is found
       await dispatch(logIn({firstName, lastName}));
+      console.log('User logged in', firstName, lastName);
 
       handleNotification(
         'success',
         'You are now logged in...Tap to move to new screen',
       );
+
+      // Redirect to another screen after successful login
+      navigation.navigate('Home');
     } catch (error) {
       console.error('Login failed:', error);
       handleNotification('error', 'Login Failed: ' + error.message);
@@ -49,22 +54,30 @@ const Login = ({navigation}) => {
 
   const dismissNotification = () => {
     setNotification(null);
-    navigation.navigate('DrawerNavigator');
   };
 
   return (
     <KeyboardAvoidingView style={styles.container}>
       {notification && (
-        <TouchableOpacity
+        <View
           style={[
             styles.notification,
             notification.type === 'success'
               ? styles.notificationSuccess
               : styles.notificationError,
-          ]}
-          onPress={dismissNotification}>
+          ]}>
           <Text style={styles.notificationText}>{notification.message}</Text>
-        </TouchableOpacity>
+          {/* Add a cross icon for dismissing the notification */}
+          <TouchableOpacity onPress={dismissNotification}>
+            <FontAwesome
+              name="close"
+              size={20}
+              color="#333"
+              // style={{marginLeft: 5}}
+              onPress={dismissNotification}
+            />
+          </TouchableOpacity>
+        </View>
       )}
       <View style={styles.headingContainer}>
         <Text style={styles.headingText}>Login</Text>
@@ -189,11 +202,14 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    flexDirection: 'row', // Added flexDirection to align the icon horizontally
+    alignItems: 'center', // Added alignItems to vertically align the icon
   },
   notificationText: {
     color: '#333',
     fontSize: 16,
     textAlign: 'center',
+    flex: 1, // Added flex to allow text to take remaining space
   },
   notificationSuccess: {
     backgroundColor: '#4CAF50',
@@ -202,4 +218,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#f44336',
   },
 });
+
 export default Login;

@@ -5,6 +5,8 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
+  KeyboardAvoidingView,
+  Platform,
 } from 'react-native';
 import {KeyboardAwareScrollView} from 'react-native-keyboard-aware-scroll-view';
 import {useDispatch} from 'react-redux';
@@ -49,12 +51,12 @@ const SignUp = ({navigation}) => {
   const dismissMessage = () => {
     setMessage('');
   };
+  655;
 
   return (
-    <KeyboardAwareScrollView
-      contentContainerStyle={styles.container}
-      resetScrollToCoords={{x: 0, y: 0}}
-      scrollEnabled={false}>
+    <KeyboardAvoidingView
+      style={styles.container}
+      behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
       {message !== '' && (
         <TouchableOpacity
           style={[
@@ -105,7 +107,7 @@ const SignUp = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </View>
-    </KeyboardAwareScrollView>
+    </KeyboardAvoidingView>
   );
 };
 
@@ -135,7 +137,7 @@ const styles = StyleSheet.create({
   label: {
     fontFamily: 'Poppins-Medium',
     color: '#000000',
-    marginTop: 15,
+    marginTop: 10,
     fontSize: 14,
   },
   input: {
@@ -148,14 +150,14 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   buttonContainer: {
-    marginTop: 10,
+    flex: 0.2,
     alignItems: 'center',
   },
   submitButton: {
     backgroundColor: '#1C6758',
     borderRadius: 10,
-    marginBottom: 10,
     width: '100%',
+    marginBottom: 10,
   },
   submitButtonText: {
     fontSize: 25,
@@ -177,7 +179,7 @@ const styles = StyleSheet.create({
   loginLink: {
     fontFamily: 'Poppins-Bold',
     textDecorationLine: 'underline',
-    color: '#1C6758',
+    color: '#000000',
     fontSize: 14,
   },
   notification: {

@@ -1,5 +1,4 @@
-import React, {useState, useEffect} from 'react';
-import {useSelector} from 'react-redux';
+// Screens/EditProfile.js
 import {
   StyleSheet,
   Text,
@@ -7,12 +6,16 @@ import {
   Image,
   TextInput,
   TouchableOpacity,
+  // Alert,
 } from 'react-native';
+import React, {useState, useEffect} from 'react';
+import {useSelector} from 'react-redux';
 
 const EditProfile = () => {
   const userState = useSelector(state => state.auth.user);
   console.log('EditProfile', userState);
 
+  // const [image, setImage] = useState(null);
   const [registerUserData, setRegisterUserData] = useState(null);
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
@@ -21,54 +24,47 @@ const EditProfile = () => {
   const [region, setRegion] = useState('');
 
   useEffect(() => {
-    if (userState) {
-      const fetchUserData = async () => {
-        try {
-          const response = await fetch(
-            `https://dummyapi.io/data/v1/user/${userState[0].id}/post`,
-            {
-              headers: {
-                'Content-Type': 'application/json',
-                'app-id': '65a941a1ba3fef5e4652e747',
-              },
+    const fetchUserData = async () => {
+      try {
+        const response = await fetch(
+          `https://dummyapi.io/data/v1/user/${userState[0].id}/post`,
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'app-id': '65a941a1ba3fef5e4652e747',
             },
-          );
+          },
+        );
 
-          if (response.ok) {
-            const data = await response.json();
-            setRegisterUserData(data);
-          } else {
-            console.error('Error fetching user data:', response.status);
-          }
-        } catch (error) {
-          console.error('Error during API call:', error);
+        if (response.ok) {
+          const data = await response.json();
+          setRegisterUserData(data);
+        } else {
+          console.error('Error fetching user data:', response.status);
         }
-      };
+      } catch (error) {
+        console.error('Error during API call:', error);
+      }
+    };
 
-      fetchUserData();
-    }
-  }, [userState]);
+    fetchUserData();
+  }, []);
+
+  const requestOptions = {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json',
+      'app-id': '65a941a1ba3fef5e4652e747',
+    },
+    body: JSON.stringify({
+      firstName: firstName,
+      lastName: lastName,
+    }),
+  };
 
   const updateProfile = async () => {
-    if (!userState) {
-      console.error('User state is null');
-      return;
-    }
-
     try {
       console.log('Sending PUT request...');
-      const requestOptions = {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'app-id': '65b2433a2fe979ac57fe617f',
-        },
-        body: JSON.stringify({
-          firstName: firstName,
-          lastName: lastName,
-        }),
-      };
-
       const response = await fetch(
         `https://dummyapi.io/data/v1/user/${userState[0].id}`,
         requestOptions,
@@ -90,32 +86,81 @@ const EditProfile = () => {
 
   return (
     <View style={styles.mainContainer}>
-      {/* Render loading indicator or message if userState is null */}
-      {!userState ? (
-        <Text>Loading...</Text>
-      ) : (
-        <>
-          {/* Render profile editing form */}
-          {/* Replace this with your profile editing UI */}
-          <Text>Profile Editing Form</Text>
-          {/* Example input for first name */}
+      <View style={styles.userContainer}>
+        <Image
+          style={styles.img}
+          source={{uri: registerUserData?.data[0]?.owner.picture}}
+        />
+
+        <Text
+          style={{
+            fontSize: 18,
+            marginLeft: 20,
+            color: '#000000',
+            fontWeight: '600',
+            fontFamily: 'Poppins',
+          }}>
+          {registerUserData?.data[0]?.owner.firstName} {''}
+          {registerUserData?.data[0]?.owner.lastName}
+        </Text>
+      </View>
+
+      <View style={styles.inputContainer}>
+        <View style={styles.txtContainer}>
+          <Text style={styles.inputText}>First Name</Text>
           <TextInput
+            style={styles.inputStyle}
             value={firstName}
             onChangeText={text => setFirstName(text)}
-            placeholder="First Name"
           />
-          {/* Example input for last name */}
+        </View>
+
+        <View style={styles.txtContainer}>
+          <Text style={styles.inputText}>Last Name</Text>
           <TextInput
+            style={styles.inputStyle1}
             value={lastName}
             onChangeText={text => setLastName(text)}
-            placeholder="Last Name"
           />
-          {/* Button to trigger profile update */}
-          <TouchableOpacity onPress={updateProfile}>
-            <Text>Update Profile</Text>
+        </View>
+
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
+          <View style={styles.textInput}>
+            <Text style={styles.inputText}>Phone Number</Text>
+            <TextInput
+              style={styles.inputStyle2}
+              value={contact}
+              onChangeText={text => setContact(text)}
+            />
+          </View>
+
+          <View style={styles.textInput}>
+            <Text style={styles.inputText}>Gender</Text>
+            <TextInput
+              style={styles.inputStyle2}
+              value={gender}
+              onChangeText={text => setGender(text)}
+            />
+          </View>
+        </View>
+
+        <View style={styles.txtContainer}>
+          <Text style={styles.inputText}>Region</Text>
+          <TextInput
+            style={styles.inputStyle1}
+            value={region}
+            onChangeText={text => setRegion(text)}
+          />
+        </View>
+
+        <View style={styles.btnContainer}>
+          <TouchableOpacity
+            onPress={updateProfile}
+            style={{marginVertical: 15}}>
+            <Text style={styles.btnTxt}>Update</Text>
           </TouchableOpacity>
-        </>
-      )}
+        </View>
+      </View>
     </View>
   );
 };
@@ -126,13 +171,11 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     padding: 10,
-    // backgroundColor:'green',
   },
 
   userContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    // justifyContent:'center',
   },
 
   img: {
@@ -141,19 +184,9 @@ const styles = StyleSheet.create({
     borderRadius: 100,
   },
 
-  // cameraImg: {
-  //   height: 20,
-  //   width: 20,
-  //   position: 'absolute',
-  //   bottom: -30,
-  //   right: -10,
-  // },
-
   inputContainer: {
-    // flex: 0,
     borderRadius: 10,
     justifyContent: 'space-around',
-    // backgroundColor: 'green',
   },
 
   txtContainer: {
@@ -172,7 +205,6 @@ const styles = StyleSheet.create({
     width: '45%',
     marginTop: 10,
     flexDirection: 'column',
-    // backgroundColor:'green',
   },
 
   inputStyle2: {
