@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from 'react';
 import {
-  ActivityIndicator,
+  // ActivityIndicator,
   StyleSheet,
   Text,
   TouchableOpacity,
@@ -22,12 +22,10 @@ import ImagePicker from 'react-native-image-crop-picker';
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
   const [photo, setPhoto] = useState();
-  const [video, setVideo] = useState();
   const [flash, setFlash] = useState('off');
   const [showCamera, setShowCamera] = useState(true);
   const [cameraType, setCameraType] = useState('back');
   const device = useCameraDevice(cameraType);
-  const [isRecording, setIsRecording] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
   const {
     hasPermission: microphonePermission,
@@ -37,100 +35,43 @@ const CameraScreen = ({navigation}) => {
   useEffect(() => {
     if (!hasPermission) {
       requestPermission();
-      console.log('Camera Permission:', hasPermission);
     }
     if (!microphonePermission) {
       requestMicrophonePermission();
-      console.log('Microphone Permission:', microphonePermission);
     }
   }, [hasPermission, microphonePermission]);
-  console.log('After requesting Camera Permission:', hasPermission);
-  console.log('After requesting Microphone Permission:', microphonePermission);
-
-  if (!hasPermission) {
-    return <ActivityIndicator />;
-  }
-
-  if (device == null) {
-    return (
-      <Text
-        style={{
-          fontSize: 28,
-          color: 'black',
-          alignSelf: 'center',
-        }}>
-        Camera not available
-      </Text>
-    );
-  }
 
   const captureButton = async () => {
-    if (isRecording) {
-      camera.current?.stopRecording();
-      return;
-    }
     console.log('Taking Picture');
     const photo = await camera.current.takePhoto({
-      // base64Encoded: true,
       flash,
     });
     setPhoto(photo);
-    // setPhoto({uri: photo.uri});
-    console.log('Image captured:', photo);
-    // catch (error) {
-    //   console.error('Error capturing photo:', error);
-    // }
-  };
-
-  const onStartRecording = async () => {
-    if (!camera.current) {
-      return;
-    }
-    setIsRecording(true);
-    camera.current.startRecording({
-      onRecordingFinished: video => {
-        setIsRecording(false);
-        setVideo(video);
-        console.log(video);
-      },
-      onRecordingError: error => {
-        console.log(error);
-        setIsRecording(false);
-      },
-    });
-    console.log('Recording started:');
   };
 
   const uploadImage = async () => {
     if (!photo) {
       return;
     }
-    const file = await camera.current.takePhoto();
-    const result = await fetch(`file://${file.path}`);
-    const data = await result.blob();
-    console.log(data);
+    // Handle image upload here
+    console.log('Selected image:', photo);
   };
 
   const openImagePicker = () => {
     ImagePicker.openPicker({
-      width: 300,
-      height: 400,
+      width: photo?.width || 300,
+      height: photo?.height || 400,
       cropping: true,
-      includeBase64: true,
     })
       .then(image => {
-        setSelectedImage(image.path);
-        setImagePickerVisible(false);
+        setPhoto(image);
       })
       .catch(error => {
         console.log('Error picking image:', error);
       });
-    console.log('Pick image from gallery');
   };
-
   const handleFlipCamera = () => {
     setCameraType(cameraType === 'back' ? 'front' : 'back');
-    console.log('Flip the camera', cameraType);
   };
 
   return (
@@ -141,14 +82,13 @@ const CameraScreen = ({navigation}) => {
         ref={camera}
         style={StyleSheet.absoluteFill}
         photo
-        video
         device={device}
         isActive={showCamera && !photo} //for showing camera disable or enable
       />
 
       {photo ? (
         <>
-          <Image source={{uri: photo.uri}} style={StyleSheet.absoluteFill} />
+          <Image source={{uri: photo.path}} style={StyleSheet.absoluteFill} />
 
           <Entypo
             onPress={() => setPhoto(undefined)}
@@ -166,7 +106,6 @@ const CameraScreen = ({navigation}) => {
       ) : (
         <>
           <Entypo
-            // onPress={() => setPhoto(undefined)}
             onPress={() => navigation.goBack('OpenCamera')}
             name="cross"
             size={60}
@@ -176,9 +115,9 @@ const CameraScreen = ({navigation}) => {
 
           <View style={styles.flashButton}>
             <Ionicons
-              name={flash == 'off' ? 'flash-off' : 'flash'}
+              name={flash === 'off' ? 'flash-off' : 'flash'}
               onPress={() =>
-                setFlash(curValue => (curValue == 'off' ? 'on' : 'off'))
+                setFlash(curValue => (curValue === 'off' ? 'on' : 'off'))
               }
               size={50}
               color="white"
@@ -187,7 +126,6 @@ const CameraScreen = ({navigation}) => {
           <TouchableOpacity
             style={styles.cameraButton}
             onPress={captureButton}
-            onLongPress={onStartRecording}
           />
           <MaterialCommunityIcons
             onPress={openImagePicker}
@@ -223,7 +161,6 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     padding: 10,
-    // backgroundColor: 'green',
     justifyContent: 'flex-end',
   },
 
@@ -263,7 +200,6 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     position: 'absolute',
     backgroundColor: 'white',
-    // backgroundColor: isRecording ? 'red' : 'white',
   },
 
   cameraTxt: {
