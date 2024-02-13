@@ -1,8 +1,10 @@
 import React from 'react';
-import CreatePost from './Screens/CameraScreen';
+import OpenCamera from './Screens/OpenCamera';
+import CameraScreen from './Screens/CameraScreen';
+import AppNavigator from './Navigation/AppNavigator';
 
 const App = () => {
-  return <CreatePost />;
+  return <AppNavigator />;
 };
 
 export default App;
