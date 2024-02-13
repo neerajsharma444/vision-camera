@@ -47,7 +47,7 @@ const CameraScreen = ({navigation}) => {
   console.log('After requesting Camera Permission:', hasPermission);
   console.log('After requesting Microphone Permission:', microphonePermission);
 
-  if (!hasPermission) {
+  if (!hasPermission || !microphonePermission) {
     return <ActivityIndicator />;
   }
 
@@ -73,10 +73,12 @@ const CameraScreen = ({navigation}) => {
     const photo = await camera.current.takePhoto({
       // base64Encoded: true,
       flash,
+      saveToGallery: true,
     });
     setPhoto(photo);
     // setPhoto({uri: photo.uri});
     console.log('Image captured:', photo);
+    // navigation.navigate('OpenCamera', {photo});
     // catch (error) {
     //   console.error('Error capturing photo:', error);
     // }
@@ -105,27 +107,33 @@ const CameraScreen = ({navigation}) => {
     if (!photo) {
       return;
     }
-    const file = await camera.current.takePhoto();
-    const result = await fetch(`file://${file.path}`);
+    // const file = await camera.current.takePhoto();
+    const result = await fetch(`file://${photo.path}`);
     const data = await result.blob();
-    console.log(data);
+    console.log('Selected Image:', data);
+    console.log(photo);
+    navigation.navigate('ImageScreen', {photo});
+    // setPhoto({...photo, width: 200, height: 200});
+    // console.log('photo', photo);
+    // setPhoto(undefined);
   };
 
   const openImagePicker = () => {
     ImagePicker.openPicker({
-      width: 300,
-      height: 400,
+      width: photo?.width || 300,
+      height: photo?.height || 400,
       cropping: true,
-      includeBase64: true,
+      // includeBase64: true,
     })
       .then(image => {
-        setSelectedImage(image.path);
-        setImagePickerVisible(false);
+        setPhoto(image);
+        // setSelectedImage(image.path);
+        // setImagePickerVisible(false);
+        console.log('Pick image from gallery');
       })
       .catch(error => {
         console.log('Error picking image:', error);
       });
-    console.log('Pick image from gallery');
   };
 
   const handleFlipCamera = () => {
@@ -135,7 +143,7 @@ const CameraScreen = ({navigation}) => {
 
   return (
     <View style={styles.mainContainer}>
-      <Text style={styles.heading}>Camera</Text>
+      {/* <Text style={styles.heading}>Camera</Text> */}
 
       <Camera
         ref={camera}
@@ -144,12 +152,16 @@ const CameraScreen = ({navigation}) => {
         video
         device={device}
         isActive={showCamera && !photo} //for showing camera disable or enable
+        onPictureTaken={data => {
+          const filteredImage = applyFilter(data.image); // Apply filter
+          setPhoto(filteredImage);
+        }}
       />
 
+      {/* && photo.path */}
       {photo ? (
         <>
-          <Image source={{uri: photo.uri}} style={StyleSheet.absoluteFill} />
-
+          <Image source={{uri: photo.path}} style={StyleSheet.absoluteFill} />
           <Entypo
             onPress={() => setPhoto(undefined)}
             name="cross"
@@ -180,35 +192,36 @@ const CameraScreen = ({navigation}) => {
               onPress={() =>
                 setFlash(curValue => (curValue == 'off' ? 'on' : 'off'))
               }
-              size={50}
+              size={45}
               color="white"
             />
           </View>
-          <TouchableOpacity
-            style={styles.cameraButton}
-            onPress={captureButton}
-            onLongPress={onStartRecording}
-          />
-          <MaterialCommunityIcons
+          <Image source={require('../images/gallery.png')} style={styles.img} />
+          {/* <MaterialCommunityIcons
             onPress={openImagePicker}
             name="view-gallery"
-            size={60}
+            size={50}
             color="white"
             style={{
               position: 'absolute',
               left: 20,
               bottom: 55,
             }}
+          /> */}
+          <TouchableOpacity
+            style={styles.cameraButton}
+            onPress={captureButton}
+            onLongPress={onStartRecording}
           />
           <MaterialIcons
             onPress={handleFlipCamera}
             name="flip-camera-android"
-            size={60}
+            size={40}
             color="white"
             style={{
               position: 'absolute',
               right: 20,
-              bottom: 55,
+              bottom: 65,
             }}
           />
         </>
@@ -222,8 +235,8 @@ export default CameraScreen;
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    padding: 10,
-    // backgroundColor: 'green',
+    // padding: 10,
+    backgroundColor: 'black',
     justifyContent: 'flex-end',
   },
 
@@ -255,6 +268,11 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
+  img: {
+    height: 50,
+    width: 50,
+  },
+  
   cameraButton: {
     width: 75,
     bottom: 50,
@@ -262,8 +280,10 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     alignSelf: 'center',
     position: 'absolute',
-    backgroundColor: 'white',
-    // backgroundColor: isRecording ? 'red' : 'white',
+    borderColor: 'white',
+    borderWidth: 4,
+    // borderStartWidth:2,
+    backgroundColor: 'transparent',
   },
 
   cameraTxt: {

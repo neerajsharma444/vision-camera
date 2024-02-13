@@ -46,4 +46,10 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingVertical: 10,
   },
+
+  imgContainer: {
+    flex: 0.6,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

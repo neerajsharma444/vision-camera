@@ -1,10 +1,19 @@
-import React from 'react';
-import OpenCamera from './Screens/OpenCamera';
-import CameraScreen from './Screens/CameraScreen';
+import React, {useEffect} from 'react';
+import {Provider} from 'react-redux';
+// import store from './src /redux/store/store';
+import SplashScreen from 'react-native-splash-screen';
 import AppNavigator from './Navigation/AppNavigator';
 
 const App = () => {
-  return <AppNavigator />;
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
+
+  return (
+    // <Provider store={store}>
+    <AppNavigator />
+    // </Provider>
+  );
 };
 
 export default App;
