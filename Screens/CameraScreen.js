@@ -1,31 +1,23 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {
-  // ActivityIndicator,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-  Image,
-} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
 import {
   Camera,
   useCameraDevice,
   useCameraPermission,
   useMicrophonePermission,
 } from 'react-native-vision-camera';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import ImagePicker from 'react-native-image-crop-picker';
 
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
   const [photo, setPhoto] = useState();
+  const [video, setVideo] = useState();
   const [flash, setFlash] = useState('off');
   const [showCamera, setShowCamera] = useState(true);
   const [cameraType, setCameraType] = useState('back');
   const device = useCameraDevice(cameraType);
+  const [isRecording, setIsRecording] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
   const {
     hasPermission: microphonePermission,
@@ -43,9 +35,17 @@ const CameraScreen = ({navigation}) => {
   console.log('After requesting Camera Permission:', hasPermission);
   console.log('After requesting Microphone Permission:', microphonePermission);
 
-  if (!hasPermission) {
+  if (!hasPermission || !microphonePermission) {
     return <ActivityIndicator />;
   }
+
+  useEffect(() => {
+    const cameraScreen = navigation.addListener('focus', () => {
+      setPhoto(undefined); // Reset photo state when navigating back to CameraScreen
+    });
+
+    return cameraScreen;
+  }, [navigation]);
 
   if (device == null) {
     return (
@@ -60,18 +60,8 @@ const CameraScreen = ({navigation}) => {
     );
   }
 
-  const captureButton = async () => {
-    console.log('Taking Picture');
-    const photo = await camera.current.takePhoto({
-      flash,
-      saveToGallery: true,
-    });
-    setPhoto(photo);
-    // setPhoto({uri: photo.uri});
-    console.log('Image captured:', photo);
-    // catch (error) {
-    //   console.error('Error capturing photo:', error);
-    // }
+  const flashButton = () => {
+    setFlash(flash === 'off' ? 'on' : 'off');
   };
 
   const onStartRecording = async () => {
@@ -93,39 +83,59 @@ const CameraScreen = ({navigation}) => {
     console.log('Recording started:');
   };
 
-  const uploadImage = async () => {
-    if (!photo) {
-      return;
-    }
-    const file = await camera.current.takePhoto();
-    const result = await fetch(`file://${file.path}`);
-    const data = await result.blob();
-    console.log(data);
-  };
-
   const openImagePicker = () => {
     ImagePicker.openPicker({
       width: photo?.width || 300,
       height: photo?.height || 400,
       cropping: true,
-      includeBase64: true,
     })
       .then(image => {
-        setSelectedImage(image.path);
-        setImagePickerVisible(false);
+        // setSelectedImage(image.path);
+        // setImagePickerVisible(false);
+        setPhoto(image);
       })
       .catch(error => {
         console.log('Error picking image:', error);
       });
   };
+
+  const captureButton = async () => {
+    if (isRecording) {
+      camera.current?.stopRecording();
+      return;
+    }
+    console.log('Taking Picture');
+    const photo = await camera.current.takePhoto({
+      flash,
+      saveToGallery: true,
+      base64Encoded: true,
+    });
+    console.log('Image captured:', photo);
+    setPhoto(photo);
+  };
+
   const handleFlipCamera = () => {
     setCameraType(cameraType === 'back' ? 'front' : 'back');
   };
 
+  const anotherImage = () => {
+    console.log('first');
+  };
+
+  const uploadImage = async () => {
+    if (!photo) {
+      return;
+    }
+    // const file = await camera.current.takePhoto();
+    const result = await fetch(`file://${photo.path}`);
+    // console.log('Selected Image:', data);
+    // console.log(data);
+    // console.log('Img', photo);
+    navigation.navigate('ImageScreen', {photo});
+  };
+
   return (
     <View style={styles.mainContainer}>
-      {/* <Text style={styles.heading}>Camera</Text> */}
-
       <Camera
         ref={camera}
         style={StyleSheet.absoluteFill}
@@ -133,27 +143,31 @@ const CameraScreen = ({navigation}) => {
         device={device}
         isActive={showCamera && !photo} //for showing camera disable or enable
         onPictureTaken={data => {
-          const filteredImage = applyFilter(data.image); // Apply filter
+          const filteredImage = applyFilter(data.image);
           setPhoto(filteredImage);
         }}
       />
 
-      {/* && photo.path */}
       {photo ? (
         <>
-          <Image source={{uri: photo.uri}} style={StyleSheet.absoluteFill} />
+          <Image
+            source={{uri: `file://${photo.path}`}}
+            style={StyleSheet.absoluteFill}
+          />
 
           <Entypo
             onPress={() => setPhoto(undefined)}
             name="cross"
-            size={60}
+            size={50}
             color="white"
-            style={{top: 0, left: 10, position: 'absolute'}}
+            style={{top: 10, left: 10, position: 'absolute'}}
           />
           <View style={styles.uploadImageView}>
+            {/* {photo && ( */}
             <TouchableOpacity onPress={uploadImage}>
               <Text style={styles.uploadImageText}>Upload</Text>
             </TouchableOpacity>
+            {/* )} */}
           </View>
         </>
       ) : (
@@ -161,53 +175,57 @@ const CameraScreen = ({navigation}) => {
           <Entypo
             onPress={() => navigation.goBack('OpenCamera')}
             name="cross"
-            size={60}
+            size={40}
             color="white"
             style={{top: 10, left: 10, position: 'absolute'}}
           />
-
           <View style={styles.flashButton}>
-            <Ionicons
-              name={flash === 'off' ? 'flash-off' : 'flash'}
-              onPress={() =>
-                setFlash(curValue => (curValue === 'off' ? 'on' : 'off'))
-              }
-              size={45}
-              color="white"
-            />
+            <TouchableOpacity onPress={flashButton}>
+              {flash === 'off' ? (
+                <Image
+                  source={require('../images/flash-off.png')}
+                  style={{height: 35, width: 25}}
+                />
+              ) : (
+                <Image
+                  source={require('../images/flash-on.png')}
+                  style={{height: 35, width: 25}}
+                />
+              )}
+            </TouchableOpacity>
           </View>
-          <TouchableOpacity
-            style={styles.cameraButton}
-            onPress={captureButton}
-            onLongPress={onStartRecording}
-          />
-          <MaterialCommunityIcons
-            onPress={openImagePicker}
-            name="view-gallery"
-            size={50}
-            color="white"
+          <View
             style={{
-              position: 'absolute',
-              left: 20,
-              bottom: 55,
-            }}
-          /> */}
-          <TouchableOpacity
-            style={styles.cameraButton}
-            onPress={captureButton}
-            onLongPress={onStartRecording}
-          />
-          <MaterialIcons
-            onPress={handleFlipCamera}
-            name="flip-camera-android"
-            size={40}
-            color="white"
-            style={{
-              position: 'absolute',
-              right: 20,
-              bottom: 65,
-            }}
-          />
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              marginBottom: 40,
+              // backgroundColor: 'green',
+            }}>
+            <TouchableOpacity
+              onPress={openImagePicker}
+              style={{alignSelf: 'center'}}>
+              <Image
+                source={require('../images/gallery.png')}
+                style={{height: 55, width: 55, left: 20}}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={captureButton}
+              onLongPress={onStartRecording}>
+              <Image
+                source={require('../images/capture.png')}
+                style={{height: 90, width: 90}}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={handleFlipCamera}
+              style={{alignSelf: 'center'}}>
+              <Image
+                source={require('../images/flip-camera.png')}
+                style={{height: 55, width: 55, right: 20}}
+              />
+            </TouchableOpacity>
+          </View>
         </>
       )}
     </View>
@@ -222,6 +240,7 @@ const styles = StyleSheet.create({
     padding: 10,
     // backgroundColor: 'green',
     justifyContent: 'flex-end',
+    // alignItems: 'center',
   },
 
   heading: {
@@ -240,7 +259,7 @@ const styles = StyleSheet.create({
   },
 
   uploadImageText: {
-    fontSize: 22,
+    fontSize: 24,
     textAlign: 'center',
     color: '#00FFFF',
   },
@@ -255,17 +274,6 @@ const styles = StyleSheet.create({
   img: {
     height: 50,
     width: 50,
-  },
-  
-  cameraButton: {
-    width: 75,
-    bottom: 50,
-    height: 75,
-    borderRadius: 100,
-    alignSelf: 'center',
-    position: 'absolute',
-    backgroundColor: 'white',
-    // backgroundColor: isRecording ? 'red' : 'white',
   },
 
   cameraTxt: {

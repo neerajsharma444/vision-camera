@@ -1,13 +1,31 @@
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React from 'react';
+import Entypo from 'react-native-vector-icons/Entypo';
 
-const ImageScreen = ({route}) => {
+const ImageScreen = ({navigation, route}) => {
   const {photo} = route.params;
+
+  const handleCross = () => {
+    navigation.navigate('CameraScreen');
+    console.log('image', photo);
+  };
 
   return (
     <View style={styles.mainContainer}>
-      <Text style={styles.heading}>Preview Image </Text>
-      <Image source={{uri: photo.path}} style={styles.image} />
+      <View
+        style={{
+          flex: 0.07,
+          flexDirection: 'row',
+          alignItems: 'center',
+          // backgroundColor: 'yellow',
+        }}>
+        <TouchableOpacity onPress={handleCross}>
+          <Entypo name="cross" size={40} color="black" />
+        </TouchableOpacity>
+
+        <Text style={styles.heading}>Preview Image </Text>
+      </View>
+      <Image source={{uri: `file://${photo.path}`}} style={styles.image} />
     </View>
   );
 };
@@ -17,23 +35,20 @@ export default ImageScreen;
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    padding: 10,
+    padding: 20,
     // backgroundColor: 'green',
-    // justifyContent: 'center',
   },
 
   heading: {
-    paddingBottom: 10,
-    textAlign: 'center',
-    fontSize: 36,
+    fontSize: 30,
     color: 'black',
+    marginLeft: 40,
     fontWeight: 'bold',
   },
 
   image: {
-    width: '100%',
-    height: '80%',
-    resizeMode: 'contain',
-    // backgroundColor: 'white',
+    borderRadius: 10,
+    flex: 0.9,
+    resizeMode: 'cover',
   },
 });
