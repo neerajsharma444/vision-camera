@@ -1,0 +1,101 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Borel-Regular.ttf",
+      "sha1": "4ed790f861450e6a79072982bd519a332798509f"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Bold.ttf",
+      "sha1": "40e545d9cdad467a919c2a38c032bc4fdb69c01f"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Medium.ttf",
+      "sha1": "575d42d95b4b562cbd91341e61ab754386ffeadd"
+    },
+    {
+      "path": "assets/fonts/DancingScript-Regular.ttf",
+      "sha1": "77b7bf804974618d28d7b73c79ea5d34c82cb704"
+    },
+    {
+      "path": "assets/fonts/DancingScript-SemiBold.ttf",
+      "sha1": "3d2e9198ccd497e0ccaf29b53cd2e4e9063dc78a"
+    },
+    {
+      "path": "assets/fonts/Estonia-Regular.ttf",
+      "sha1": "94e0c684298842de96df65416af3c7cf1589c662"
+    },
+    {
+      "path": "assets/fonts/GrechenFuemen-Regular.ttf",
+      "sha1": "38a61521741a0b6793c2e888c901818c4f8f4067"
+    },
+    {
+      "path": "assets/fonts/GreyQo-Regular.ttf",
+      "sha1": "3af4276e9841375c53b32dc83071b790932e6bd1"
+    },
+    {
+      "path": "assets/fonts/IngridDarling-Regular.ttf",
+      "sha1": "fb42f4a9d095cadbf3d00cd83c257ccacd07b772"
+    },
+    {
+      "path": "assets/fonts/Lugrasimo-Regular.ttf",
+      "sha1": "66377db98c17977c6eef8f290d1e32465ab81e98"
+    },
+    {
+      "path": "assets/fonts/Lumanosimo-Regular.ttf",
+      "sha1": "95a41a2fb91528921b197cc24fee7f4387cd98b4"
+    },
+    {
+      "path": "assets/fonts/MoonDance-Regular.ttf",
+      "sha1": "8e3f8e2fce04f97660e63cd7059dd66260fc2474"
+    },
+    {
+      "path": "assets/fonts/NovaSquare-Regular.ttf",
+      "sha1": "08c92a5ce9ab8520b50630012a5c320288ffff42"
+    },
+    {
+      "path": "assets/fonts/Petemoss-Regular.ttf",
+      "sha1": "24696de395b1132ba4564a9ee5b80fac2a1467e3"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-Bold.ttf",
+      "sha1": "e976ee574967a0e604ff44f4118181fa5f113494"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-ExtraBold.ttf",
+      "sha1": "89d3a913b76605cc16f5510d169f7d882546806a"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-ExtraLight.ttf",
+      "sha1": "8f0d9facd5772d31e3d75c8ba57e71c54bc0749f"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-Light.ttf",
+      "sha1": "86dd57d76ea275b5a232dbbdfcc92f134a7f3832"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-Medium.ttf",
+      "sha1": "c2ae75f542d27f5f2306d0924cb3e9e00dfbc806"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-Regular.ttf",
+      "sha1": "67ff9d916ffe076820f1c3903a122b229929ddf1"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-SemiBold.ttf",
+      "sha1": "766c2896b3eaad04628101b2c576d3a4580d60f4"
+    },
+    {
+      "path": "assets/fonts/PlaypenSans-Thin.ttf",
+      "sha1": "d6b0d2860de3a5bb6b901887f98584eca9562b6d"
+    },
+    {
+      "path": "assets/fonts/Tapestry-Regular.ttf",
+      "sha1": "c7efc62e8c0cad2d234df303e6acde2265313a34"
+    },
+    {
+      "path": "assets/fonts/TwinkleStar-Regular.ttf",
+      "sha1": "21ff8c1ab355dc41e15971ea2de09ee826e6cddb"
+    }
+  ]
+}
