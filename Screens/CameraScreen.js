@@ -1,5 +1,12 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Image,
+  ActivityIndicator,
+} from 'react-native';
 import {
   Camera,
   useCameraDevice,
@@ -19,6 +26,7 @@ const CameraScreen = ({navigation}) => {
   const device = useCameraDevice(cameraType);
   const [isRecording, setIsRecording] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
+
   const {
     hasPermission: microphonePermission,
     requestPermission: requestMicrophonePermission,
@@ -41,7 +49,7 @@ const CameraScreen = ({navigation}) => {
 
   useEffect(() => {
     const cameraScreen = navigation.addListener('focus', () => {
-      setPhoto(undefined); // Reset photo state when navigating back to CameraScreen
+      setPhoto(undefined);
     });
 
     return cameraScreen;
@@ -88,6 +96,7 @@ const CameraScreen = ({navigation}) => {
       width: photo?.width || 300,
       height: photo?.height || 400,
       cropping: true,
+      includeBase64: true,
     })
       .then(image => {
         setPhoto(image);
@@ -132,7 +141,7 @@ const CameraScreen = ({navigation}) => {
         style={StyleSheet.absoluteFill}
         photo
         device={device}
-        isActive={showCamera && !photo} //for showing camera disable or enable
+        isActive={showCamera && !photo}
         onPictureTaken={data => {
           const filteredImage = applyFilter(data.image);
           setPhoto(filteredImage);

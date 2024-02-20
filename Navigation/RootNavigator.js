@@ -5,6 +5,8 @@ import CameraScreen from '../Screens/CameraScreen';
 import OpenCamera from '../Screens/OpenCamera';
 import ImageScreen from '../Screens/ImageScreen';
 import TabNavigator from './TabNavigator';
+import {handleDatabase} from '../src/FireBaseDataBase/FirebaseDatabase';
+handleDatabase;
 
 const Stack = createStackNavigator();
 
