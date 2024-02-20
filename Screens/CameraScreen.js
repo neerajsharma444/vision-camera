@@ -8,11 +8,12 @@ import {
 } from 'react-native-vision-camera';
 import Entypo from 'react-native-vector-icons/Entypo';
 import ImagePicker from 'react-native-image-crop-picker';
+import BlurImage from '../Components/Filters/BlurImage';
+import MatrixColor from '../Components/Filters/MatrixColor';
 
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
   const [photo, setPhoto] = useState();
-  const [video, setVideo] = useState();
   const [flash, setFlash] = useState('off');
   const [showCamera, setShowCamera] = useState(true);
   const [cameraType, setCameraType] = useState('back');
@@ -23,6 +24,7 @@ const CameraScreen = ({navigation}) => {
     hasPermission: microphonePermission,
     requestPermission: requestMicrophonePermission,
   } = useMicrophonePermission();
+  const [selectedFilters, setSelectedFilters] = useState([]);
 
   useEffect(() => {
     if (!hasPermission) {
@@ -32,33 +34,15 @@ const CameraScreen = ({navigation}) => {
       requestMicrophonePermission();
     }
   }, [hasPermission, microphonePermission]);
-  console.log('After requesting Camera Permission:', hasPermission);
-  console.log('After requesting Microphone Permission:', microphonePermission);
-
-  if (!hasPermission || !microphonePermission) {
-    return <ActivityIndicator />;
-  }
 
   useEffect(() => {
     const cameraScreen = navigation.addListener('focus', () => {
       setPhoto(undefined); // Reset photo state when navigating back to CameraScreen
+      setSelectedFilters([]); // Reset selected filters when navigating back
     });
 
     return cameraScreen;
   }, [navigation]);
-
-  if (device == null) {
-    return (
-      <Text
-        style={{
-          fontSize: 28,
-          color: 'black',
-          alignSelf: 'center',
-        }}>
-        Camera not available
-      </Text>
-    );
-  }
 
   const flashButton = () => {
     setFlash(flash === 'off' ? 'on' : 'off');
@@ -116,13 +100,32 @@ const CameraScreen = ({navigation}) => {
     setCameraType(cameraType === 'back' ? 'front' : 'back');
   };
 
+  const applyFilter = filter => {
+    setSelectedFilters(prevFilters => [...prevFilters, filter]);
+  };
+
   const uploadImage = async () => {
     if (!photo) {
       return;
     }
-    const result = await fetch(`file://${photo.path}`);
-    console.log('result', photo);
-    navigation.navigate('Post', {photo: photo});
+
+    let imageUri = photo.path;
+
+    // Apply selected filters
+    for (const filter of selectedFilters) {
+      if (filter === 'blur') {
+        const blurredImage = await BlurImage.applyBlur(imageUri);
+        imageUri = `file://${blurredImage.uri}`;
+      } else if (filter === 'color') {
+        const coloredImage = await MatrixColor.applyColorMatrix(imageUri);
+        imageUri = `file://${coloredImage.uri}`;
+      }
+    }
+
+    // Navigate to Post screen with the updated image URI
+    console.log('Uploading image:', imageUri);
+
+    navigation.navigate('Post', {photo: {...photo, path: imageUri}});
   };
 
   return (
@@ -132,10 +135,10 @@ const CameraScreen = ({navigation}) => {
         style={StyleSheet.absoluteFill}
         photo
         device={device}
-        isActive={showCamera && !photo} //for showing camera disable or enable
+        isActive={showCamera && !photo} // for showing camera disable or enable
         onPictureTaken={data => {
-          const filteredImage = applyFilter(data.image);
-          setPhoto(filteredImage);
+          setPhoto(data.image);
+          setSelectedFilters([]); // Reset selected filters when a new photo is taken
         }}
       />
 
@@ -153,11 +156,11 @@ const CameraScreen = ({navigation}) => {
             color="white"
             style={{top: 10, left: 10, position: 'absolute'}}
           />
-          <View style={styles.uploadImageView}>
+          {/* <View style={styles.uploadImageView}>
             <TouchableOpacity onPress={uploadImage}>
               <Text style={styles.uploadImageText}>Upload</Text>
             </TouchableOpacity>
-          </View>
+          </View> */}
         </>
       ) : (
         <>
@@ -219,6 +222,36 @@ const CameraScreen = ({navigation}) => {
           </View>
         </>
       )}
+
+      {/* Render filters */}
+      {photo && !selectedFilters.length && (
+        <View
+          style={{
+            flexDirection: 'row',
+            justifyContent: 'center',
+            position: 'absolute',
+            bottom: '10%',
+            left: 0,
+            right: 0,
+          }}>
+          <TouchableOpacity
+            onPress={() => applyFilter('blur')}
+            style={styles.filterButton}>
+            <Text style={styles.filterButtonText}>Blur</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => applyFilter('color')}
+            style={styles.filterButton}>
+            <Text style={styles.filterButtonText}>Color</Text>
+          </TouchableOpacity>
+        </View>
+      )}
+      {photo && selectedFilters.includes('blur') && (
+        <BlurImage imageUrl={`file://${photo.path}`} />
+      )}
+      {photo && selectedFilters.includes('color') && (
+        <MatrixColor imageUrl={`file://${photo.path}`} />
+      )}
     </View>
   );
 };
@@ -228,16 +261,7 @@ export default CameraScreen;
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    // padding: 10,
     justifyContent: 'flex-end',
-    // backgroundColor: 'green',
-  },
-
-  heading: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: 'white',
   },
 
   uploadImageView: {
@@ -261,16 +285,16 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
-  img: {
-    height: 50,
-    width: 50,
+  filterButton: {
+    backgroundColor: 'rgba(255, 255, 255, 0.5)',
+    borderRadius: 8,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    marginHorizontal: 10,
   },
 
-  cameraTxt: {
-    fontSize: 20,
-    color: '#FFFFFF',
-    fontWeight: 'bold',
-    textAlign: 'center',
-    paddingVertical: 10,
+  filterButtonText: {
+    fontSize: 16,
+    color: 'white',
   },
 });
