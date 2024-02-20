@@ -2,100 +2,3208 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "assets/fonts/Borel-Regular.ttf",
-      "sha1": "4ed790f861450e6a79072982bd519a332798509f"
+      "path": "assets/effects/Burning Effect/burning_effect.deepar",
+      "sha1": "5891abde7778699f4de0bfadf85b96a49ff24826"
     },
     {
-      "path": "assets/fonts/DancingScript-Bold.ttf",
-      "sha1": "40e545d9cdad467a919c2a38c032bc4fdb69c01f"
+      "path": "assets/effects/Burning Effect/fire/frame000000.png",
+      "sha1": "31aa62b23d8870cda3973d50833d4d5a6416ce2c"
     },
     {
-      "path": "assets/fonts/DancingScript-Medium.ttf",
-      "sha1": "575d42d95b4b562cbd91341e61ab754386ffeadd"
+      "path": "assets/effects/Burning Effect/fire/frame000001.png",
+      "sha1": "924f09f2674c10a7f9b16cb44eb690ed60471765"
     },
     {
-      "path": "assets/fonts/DancingScript-Regular.ttf",
-      "sha1": "77b7bf804974618d28d7b73c79ea5d34c82cb704"
+      "path": "assets/effects/Burning Effect/fire/frame000002.png",
+      "sha1": "a2ffaf6b7393f45aff8d0c1a589cabad08a636eb"
     },
     {
-      "path": "assets/fonts/DancingScript-SemiBold.ttf",
-      "sha1": "3d2e9198ccd497e0ccaf29b53cd2e4e9063dc78a"
+      "path": "assets/effects/Burning Effect/fire/frame000003.png",
+      "sha1": "1eb60f5e47da7506273d7c7e3a84a2399d4e2f71"
     },
     {
-      "path": "assets/fonts/Estonia-Regular.ttf",
-      "sha1": "94e0c684298842de96df65416af3c7cf1589c662"
+      "path": "assets/effects/Burning Effect/fire/frame000004.png",
+      "sha1": "709b235257fdcf32fb2106bd9774023324d95e2e"
     },
     {
-      "path": "assets/fonts/GrechenFuemen-Regular.ttf",
-      "sha1": "38a61521741a0b6793c2e888c901818c4f8f4067"
+      "path": "assets/effects/Burning Effect/fire/frame000005.png",
+      "sha1": "afa2655ae524efef159658ad38e5193699d0da32"
     },
     {
-      "path": "assets/fonts/GreyQo-Regular.ttf",
-      "sha1": "3af4276e9841375c53b32dc83071b790932e6bd1"
+      "path": "assets/effects/Burning Effect/fire/frame000006.png",
+      "sha1": "c92bc4d0da89c889ca1bffac9fbd830e1699e963"
     },
     {
-      "path": "assets/fonts/IngridDarling-Regular.ttf",
-      "sha1": "fb42f4a9d095cadbf3d00cd83c257ccacd07b772"
+      "path": "assets/effects/Burning Effect/fire/frame000007.png",
+      "sha1": "77b30381d868bb3007c745e08b16a178fbddb1a7"
     },
     {
-      "path": "assets/fonts/Lugrasimo-Regular.ttf",
-      "sha1": "66377db98c17977c6eef8f290d1e32465ab81e98"
+      "path": "assets/effects/Burning Effect/fire/frame000008.png",
+      "sha1": "0fa558a7f1be4afac3a255408c573b4b2a803df5"
     },
     {
-      "path": "assets/fonts/Lumanosimo-Regular.ttf",
-      "sha1": "95a41a2fb91528921b197cc24fee7f4387cd98b4"
+      "path": "assets/effects/Burning Effect/fire/frame000009.png",
+      "sha1": "874bbd97d28c1ee2b1338e355b9d2539c2692b71"
     },
     {
-      "path": "assets/fonts/MoonDance-Regular.ttf",
-      "sha1": "8e3f8e2fce04f97660e63cd7059dd66260fc2474"
+      "path": "assets/effects/Burning Effect/fire/frame000010.png",
+      "sha1": "524a02ea03f61e9c09a881144ad5e64e262e01e7"
     },
     {
-      "path": "assets/fonts/NovaSquare-Regular.ttf",
-      "sha1": "08c92a5ce9ab8520b50630012a5c320288ffff42"
+      "path": "assets/effects/Burning Effect/fire/frame000011.png",
+      "sha1": "5b8a674c37ff29a59785bd3d97136e6eb8a5c79a"
     },
     {
-      "path": "assets/fonts/Petemoss-Regular.ttf",
-      "sha1": "24696de395b1132ba4564a9ee5b80fac2a1467e3"
+      "path": "assets/effects/Burning Effect/fire/frame000012.png",
+      "sha1": "b4101478e3f461b2cbb152f84bfa38f3a47ace10"
     },
     {
-      "path": "assets/fonts/PlaypenSans-Bold.ttf",
-      "sha1": "e976ee574967a0e604ff44f4118181fa5f113494"
+      "path": "assets/effects/Burning Effect/fire/frame000013.png",
+      "sha1": "06480bac11d386038778aaea78feaf0853f4c888"
     },
     {
-      "path": "assets/fonts/PlaypenSans-ExtraBold.ttf",
-      "sha1": "89d3a913b76605cc16f5510d169f7d882546806a"
+      "path": "assets/effects/Burning Effect/fire/frame000014.png",
+      "sha1": "1c2bdc30186ce2929395910abd0285df46361d7c"
     },
     {
-      "path": "assets/fonts/PlaypenSans-ExtraLight.ttf",
-      "sha1": "8f0d9facd5772d31e3d75c8ba57e71c54bc0749f"
+      "path": "assets/effects/Burning Effect/fire/frame000015.png",
+      "sha1": "f56661a702de73dda81daa25cbc772a8fe9ccff7"
     },
     {
-      "path": "assets/fonts/PlaypenSans-Light.ttf",
-      "sha1": "86dd57d76ea275b5a232dbbdfcc92f134a7f3832"
+      "path": "assets/effects/Burning Effect/fire/frame000016.png",
+      "sha1": "2c334ab199bafe98e62c55867b7821e7ea73f566"
     },
     {
-      "path": "assets/fonts/PlaypenSans-Medium.ttf",
-      "sha1": "c2ae75f542d27f5f2306d0924cb3e9e00dfbc806"
+      "path": "assets/effects/Burning Effect/fire/frame000017.png",
+      "sha1": "85869919d764b7c5909e00a8fda0847a8e3748ef"
     },
     {
-      "path": "assets/fonts/PlaypenSans-Regular.ttf",
-      "sha1": "67ff9d916ffe076820f1c3903a122b229929ddf1"
+      "path": "assets/effects/Burning Effect/fire/frame000018.png",
+      "sha1": "4155995023313b3035a1cff23d8879d0b089476d"
     },
     {
-      "path": "assets/fonts/PlaypenSans-SemiBold.ttf",
-      "sha1": "766c2896b3eaad04628101b2c576d3a4580d60f4"
+      "path": "assets/effects/Burning Effect/fire/frame000019.png",
+      "sha1": "1d6079e2b2744bd1c4892026779136c518720308"
     },
     {
-      "path": "assets/fonts/PlaypenSans-Thin.ttf",
-      "sha1": "d6b0d2860de3a5bb6b901887f98584eca9562b6d"
+      "path": "assets/effects/Burning Effect/fire/frame000020.png",
+      "sha1": "5df73f9962f4f24323b9ea3955f17611a32cea4c"
     },
     {
-      "path": "assets/fonts/Tapestry-Regular.ttf",
-      "sha1": "c7efc62e8c0cad2d234df303e6acde2265313a34"
+      "path": "assets/effects/Burning Effect/fire/frame000021.png",
+      "sha1": "b5e01847bb77ac74f271ef5b728295ffab64d044"
     },
     {
-      "path": "assets/fonts/TwinkleStar-Regular.ttf",
-      "sha1": "21ff8c1ab355dc41e15971ea2de09ee826e6cddb"
+      "path": "assets/effects/Burning Effect/fire/frame000022.png",
+      "sha1": "9bfc41fa35d0f85635d11ab6b863fa4a0fb7e658"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000023.png",
+      "sha1": "232478ef5f5251bcf3cb5c783ddad68a2fe8407e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000024.png",
+      "sha1": "0bc0ec37e31cfa93649af5b1ee8dd3ecedcf7e23"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000025.png",
+      "sha1": "091e77e878bd20ad80072921fb981f7b8137243d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000026.png",
+      "sha1": "f0615ea3222403e0fdcac882b300975ac7121d2c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000027.png",
+      "sha1": "89f0c5409b83cc5b754c384a17b639baad1f7c42"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000028.png",
+      "sha1": "a2ca27736f33e81c3438644a08229b55d0a779ca"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000029.png",
+      "sha1": "bd16166675602f54ddf603606784addb31c744a7"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000030.png",
+      "sha1": "b5920c8e548a1549361125dedd8365cab3375577"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000031.png",
+      "sha1": "661c24aae9b6e8451799b12d99b0e73a471fc93f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000032.png",
+      "sha1": "264c61bb331871405485263f54dd10994d6da2b1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000033.png",
+      "sha1": "112aabce0ff245be3cbaa784617bc4328bc6e2e4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000034.png",
+      "sha1": "8553a394d1da0ad5f13e464792518fbfa25548b9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000035.png",
+      "sha1": "f67fe25847bf9759f28f59d5a4dfd7d4061586ba"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000036.png",
+      "sha1": "5a29f578a70c53a2d335c60b13a50ad6387f0f28"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000037.png",
+      "sha1": "89345a9c789649ce0d202f68266126daa29be0c3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000038.png",
+      "sha1": "a4a6675bc656ebb03c9a8afc83580bc52d98dac9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000039.png",
+      "sha1": "c33e59a244e81c66a82929557a40b89d03011bb8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000040.png",
+      "sha1": "4f4e5f7694838a5c2f85404c14d5a7b903d038d6"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000041.png",
+      "sha1": "d187030a6b45b88420b05b6662c760646a0c6fd5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000042.png",
+      "sha1": "cb51b88ac72166cf5ed95f063115c498d91c649e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000043.png",
+      "sha1": "1fb428f93bc5d1017be4432f57b8fd0f016186e8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000044.png",
+      "sha1": "e42a86db9e57aa01e8820b7c9efdc0df7d6fbd71"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000045.png",
+      "sha1": "ddd269a3ff23d483950f16e5082b59cdd9db3d0b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000046.png",
+      "sha1": "2d2db50a966853bd299bb3eb756774124d5c4b03"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000047.png",
+      "sha1": "ac76f95a66510b3a0e35623fe20539e23530b9b9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000048.png",
+      "sha1": "c7575b4b4cfdc2265cabdffcbcb48e9d481f7d38"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000049.png",
+      "sha1": "6d2139b20c8b0fbd717f8953412b4b6d15a8f8c4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000050.png",
+      "sha1": "efe12927d166a2d8ab169c8769378de93c9352ea"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000051.png",
+      "sha1": "866a3296e86557b4156521a87f790d5d166aba40"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000052.png",
+      "sha1": "792e3f00f1b5a7c684e2c7f6457f76936f053ea5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000053.png",
+      "sha1": "aecb12940b523b00bb29fef4ef6d9699889b53d1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000054.png",
+      "sha1": "5cc1e180c11c2771d22ede9e1ac97ff77f2edbe2"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000055.png",
+      "sha1": "00d7894dbe69656e94c0bc4620eb13c802895407"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000056.png",
+      "sha1": "26a2396bdafdd9624b9184e8e6cdb47faaf237dc"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000057.png",
+      "sha1": "6ebf0baafdae3ee7639f3bc63fe1ae5f644e4e6b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000058.png",
+      "sha1": "ad7e244fd8d938ca67f6241e72ecc281711cf64e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000059.png",
+      "sha1": "832f57c597f7bfbacb3d8652112e7d38fc28ace8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000060.png",
+      "sha1": "56447aa3162ee734df3d3a6f639c66034126ac1f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000061.png",
+      "sha1": "daa400f539cd2ab6f2be45e48328694c2a1e43da"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000062.png",
+      "sha1": "96fb6fa67c9320077e9371bd7f7f63beba84d915"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000063.png",
+      "sha1": "73d05198996b47eb62add54b2d9e7a199dfa9d78"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000064.png",
+      "sha1": "16edf1d29364750cc0850a66d747af66ce096ce5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000065.png",
+      "sha1": "952234db698e0bb134ccb1509a9dacf72597c7e1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000066.png",
+      "sha1": "9180e9dd991e07ffffa06891c7261e9777fa94a1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000067.png",
+      "sha1": "202ead851071f3f22e6ecacb1452735fbf81f042"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000068.png",
+      "sha1": "710b3f8fce018bf138bdf9076b0527b0bf75e65c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000069.png",
+      "sha1": "83981020723ffe848e81e9c2c5bcf3387c9c168b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000070.png",
+      "sha1": "df13cb93ff42d261ca372a6ec7b7fb7f2a146c7e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000071.png",
+      "sha1": "bde9016e7a52d09c5f44b7ff32a1c97d2c11849a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000072.png",
+      "sha1": "9783f40fbd630b1a62819acc6417afd5e0142e11"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000073.png",
+      "sha1": "a16221b085a453d8d770d9fc167737e35db7be39"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000074.png",
+      "sha1": "a8a3230869374462301b94e7f8b7135fc44e8c7b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000075.png",
+      "sha1": "7cf435295945a91ccbcb418cd3a8b72b515386a0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000076.png",
+      "sha1": "bbbd35fa639147b3f4b9c17fb5b496ee8325b753"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000077.png",
+      "sha1": "16b4c1c4575507bf5fea7ba15d020ffc080b46ef"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000078.png",
+      "sha1": "cc463e057992c21d24ac3a41fb9c5382f2d6aca2"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000079.png",
+      "sha1": "96f9bd921728deb8e59bc6ab5ec37b6e5766284a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000080.png",
+      "sha1": "218cb7d853931db8aeb1485bef2fbd010a008544"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000081.png",
+      "sha1": "cd6d0113730090b39cf9ea8ed7fbd21f10209059"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000082.png",
+      "sha1": "f90d0ef8329d5699ca8562e6717beb786a9a981f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000083.png",
+      "sha1": "3f42889538f5e9ea8f39ccc6ec327004a44e8307"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000084.png",
+      "sha1": "a00ce559c78477fcc6557985ea1e336419257336"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000085.png",
+      "sha1": "24a67a51cafe54178e85075fb129b65b6129b9f6"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000086.png",
+      "sha1": "8bc99739d5a915a7ddb618c90651121278f7e6cd"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000087.png",
+      "sha1": "2347621280b9b30d0c66167bdc7cc4f2f853af31"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000088.png",
+      "sha1": "b3a0399a517b7c406314b986d30f44e271eb917e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000089.png",
+      "sha1": "cc285399b742ce8a9374f33d5fd62205eb4280f0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000090.png",
+      "sha1": "72e3258269b72edafacaa734bb156bac982021a0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000091.png",
+      "sha1": "8644d840c2fdb0363156ab817a18e9f6e4336cb4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000092.png",
+      "sha1": "aaabe2c286eadbed68716d8d8cf1cb3ed8611f28"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000093.png",
+      "sha1": "61c9f40a4dde9c0bd29d5b42d8deed62f70d0f1f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000094.png",
+      "sha1": "5c4c25ae9fc3807eedee6de3020fe9b7520d4920"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000095.png",
+      "sha1": "6ad6ac2f56ee4e2b199626b995b7d341f2f65867"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000096.png",
+      "sha1": "d4738d5b606862f567eb70890cde554594174308"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000097.png",
+      "sha1": "2571f440b7b1fec14fab5e476266f8d92f5ceb3e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000098.png",
+      "sha1": "a216becff6d4dc451a049ac6070898393dd906f8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000099.png",
+      "sha1": "cae264aa98cbf65c8fb415afdd699a0513c1157a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000100.png",
+      "sha1": "6a6b7147f0fcbbeedcd44c69a0ee40f718744d34"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000101.png",
+      "sha1": "f1147f5bf3acc78632f279094924623848c30fe6"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000102.png",
+      "sha1": "d08eac30829832d045b4bfd337c51ee21000d789"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000103.png",
+      "sha1": "c0edb64497f116105459cd7fdee57b2247111d6d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000104.png",
+      "sha1": "e8504f27b273b7b50169d071639abf806ed44769"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000105.png",
+      "sha1": "c5a67eaa756370f3a017ce6bec39111388a164ad"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000106.png",
+      "sha1": "a8a8d6cd9bf1a3f21285ca8959ded554b460eb6c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000107.png",
+      "sha1": "b4154a15c18bfbad5c002f922143ce807f3e6b02"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000108.png",
+      "sha1": "b05dbd6c2009ba95a10c45cacc35ef335ba43e72"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000109.png",
+      "sha1": "d094f432ab3f69effc6af44cc71b3550d1e1777e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000110.png",
+      "sha1": "eae7ae3df54cc0a80bd0719820401472dbd35e63"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000111.png",
+      "sha1": "83be778d47f1140bd8b80d84e9221de1b70d8cc3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000112.png",
+      "sha1": "37420323b9c3f9b6dfc9c14d8c912a86e5dcdd91"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000113.png",
+      "sha1": "72dbacedc5d34a47118fb6e322ac83a92e89acfa"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000114.png",
+      "sha1": "427ccf94143c431b56cdd9c450a7c8a0fdf6338b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000115.png",
+      "sha1": "4dfc2d9d72806d6ebfa8d609aa788ccba504b35b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000116.png",
+      "sha1": "49cc5f67fcd116cf172ffdc6525d8f7a086bd1ca"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000117.png",
+      "sha1": "99c06d24b8c22efd7833f8a51a5a22a44134c62d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000118.png",
+      "sha1": "308b5cf42b5fa950404109fe1bf9d99bcab9ba08"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000119.png",
+      "sha1": "877083efb048b65bba3059fc66f04e12fe783994"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000120.png",
+      "sha1": "53d1d045169d29ac930b6f2e9c7caf0a381441b4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000121.png",
+      "sha1": "540c9e675a5cbd68c13903504dda18caf16d31b4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000122.png",
+      "sha1": "f9ab73d02e38b3f9ced2c2759bc3b3f2e4df711c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000123.png",
+      "sha1": "df898cb8f75015ce6f4542eca92177164e779716"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000124.png",
+      "sha1": "f96c75eeaddf7c698f607704fb4508f252850c59"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire/frame000125.png",
+      "sha1": "ca7b8a7c3a116ea2dc1ed787be6849e61e01d40b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/.mayaSwatches/frame-000121.jpg_hcm.swatch",
+      "sha1": "76906373d1fcd7246ae5f72d7ef1c896e5e9319f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000000.png",
+      "sha1": "f92ba371deb075f3403309fd44f0dc589d98c93b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000001.png",
+      "sha1": "20f965f62fd7d5dfcf386cc5c1ca6ef1c66affc4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000002.png",
+      "sha1": "9951f3f0370a9bcb2eeb5ab06bfcb2371b023add"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000003.png",
+      "sha1": "e0554a6216dd661f8346669436f0c2fbd83b9565"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000004.png",
+      "sha1": "e4dc5c830756169950189872ff4ee2704b35cfa6"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000005.png",
+      "sha1": "3eac4593e667ae3f0c81eabb175b95c40ceea88a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000006.png",
+      "sha1": "5924ed0ab3b58c43851aed3aa03131d330f25980"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000007.png",
+      "sha1": "38741b245f1df455eee98a128ffadcfef1c09a01"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000008.png",
+      "sha1": "3b4fd63bef7a339b8ac814e95c23feff5bd459ec"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000009.png",
+      "sha1": "8c4c5d31fcc7508491dbfc53699fc759c666e6c5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000010.png",
+      "sha1": "be9d630823a307ad29b469d7a0b4c7907927b81b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000011.png",
+      "sha1": "b870f43afd1101dba3b471fce8bd63a55e8fb435"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000012.png",
+      "sha1": "268db2764e3972be28c07e07fdfc41208fc8b1a3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000013.png",
+      "sha1": "4139836e346a1409f1faed6d90e7876062db5d84"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000014.png",
+      "sha1": "b348b16e9cc28b24013beed12b7a2b5aa39d80b5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000015.png",
+      "sha1": "594c3a9d49f86eef4d2f8a6ececcef97c8b8ed8d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000016.png",
+      "sha1": "d34dcac28173e429626b85f0524b36473c76ee6a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000017.png",
+      "sha1": "55032503c643731cfee3c3b66a5b5d8ebd1e2ec0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000018.png",
+      "sha1": "ee64b67de184638c066bf33bcf3b1d6dfbced49a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000019.png",
+      "sha1": "6a7aca9d5adf58505cce06e471cace34319245f8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000020.png",
+      "sha1": "fd868ab85e62912d84645137ae78415ea63cb767"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000021.png",
+      "sha1": "2646ba6dfd89898355a6ecbc184fc889fb0a7d97"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000022.png",
+      "sha1": "3e5eeed90d31892cd572c584ee17c018922b768b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000023.png",
+      "sha1": "bd533c8019b3aa3d8b8fe9b1f596f3f728855178"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000024.png",
+      "sha1": "012657b6106bf798f0ac512c02f66aa8dcaabbd3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000025.png",
+      "sha1": "2226c75bef7b6946994b88cbd7d4e78468239dd4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000026.png",
+      "sha1": "89dba9be1eda0b9376d21bd8b7dbd0e9362c434b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000027.png",
+      "sha1": "3fdffa8413075692d9a43fed7b8ed7909152e91f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000028.png",
+      "sha1": "71a3f68c0ed10d1e4d94d645f661b3208f2b397a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000029.png",
+      "sha1": "f4de3572120c03f9de6cfb403858c2fb2d290cf9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000030.png",
+      "sha1": "be60d2662c16e61c435be4df71df38a6812ba138"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000031.png",
+      "sha1": "05ef9df65d5486eb0b4f32451f95ac85f5ab039c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000032.png",
+      "sha1": "0e799af99423e1053ec266edeaee3e4f78eae0f8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000033.png",
+      "sha1": "0e01d3d3ddb920d8cd84e234f4971396de418347"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000034.png",
+      "sha1": "ce605c2c58322827c7469d1de65d139932b2fb7f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000035.png",
+      "sha1": "732bddaf20a13d8622daf31ce408beaa4afd8e6a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000036.png",
+      "sha1": "d264c9fc4ebf173707dd1a9073c1d4a1d1496184"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000037.png",
+      "sha1": "2b81c2b64f86b0833ec0675a7d304aec18f672bd"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000038.png",
+      "sha1": "b4ed1da26696c70a3770cd07f5067d6b93924958"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000039.png",
+      "sha1": "c35a64c02da5644ab7c5b35b15044ab13169d48a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000040.png",
+      "sha1": "308acc7070fb1c142f5cbe92232809631befdafb"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000041.png",
+      "sha1": "32e66aee6478ab6f1648ce1789e3ecde2b8cff41"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000042.png",
+      "sha1": "596e59f78bb10783d94f46faf064add55118982a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000043.png",
+      "sha1": "f5354703cf0d55e3ba734a17c28d2e5e97e261ea"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000044.png",
+      "sha1": "00095461058b549fab89e108fa24bdccb78dcf97"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000045.png",
+      "sha1": "f62f45ef17cbef3b17a98f100ca71f4d170df040"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000046.png",
+      "sha1": "1c5be5b8e69ef8d3affd5152c1e13f6d8f85f18c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000047.png",
+      "sha1": "da9d56580666bd190043cd48a00c40f42524a00c"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000048.png",
+      "sha1": "07b3ad64abdd6d47b606693042c743bca54749c1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000049.png",
+      "sha1": "e1b84eab010422114560e979c45f850cf4d40e85"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000050.png",
+      "sha1": "4bbd60596e156ae303a920f21d37a78c0876aff0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000051.png",
+      "sha1": "a5df251903378eca7aa662f66380d13e1b2591f7"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000052.png",
+      "sha1": "02570ba424289db0f5f61c977031145e4a3dc777"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000053.png",
+      "sha1": "8299357177ef1a41eda0971c328e8e218963fee8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000054.png",
+      "sha1": "2858af292352b02f8b24443f6658a3ed0d752112"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000055.png",
+      "sha1": "4521bbc74a377f5d60866130b9c97ed3b30721fb"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000056.png",
+      "sha1": "58b8bf0637c6bf5e34d74dd55a8e6bae5a028b84"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000057.png",
+      "sha1": "d9b549ab9f005e3dce547529776af067790d9294"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000058.png",
+      "sha1": "4e80309aa8b7e7d948aae4b3e9fc8ae2d7fe2019"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000059.png",
+      "sha1": "eb2fb9de4337573786cc5e5977c4dc7650cd1e7f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000060.png",
+      "sha1": "6e32601a61800e926dfee3ef7da658e69cdcbaa6"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000061.png",
+      "sha1": "1947ef5399e01080430ebaf0d215d2f1010a9a6e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000062.png",
+      "sha1": "2f3a8f17800416b166a483af50dbd7f9041b620a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000063.png",
+      "sha1": "1ee96df0c3424980d9dde740cdbd4021c38b8473"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000064.png",
+      "sha1": "758c7720153bcaade84c7cd31a6f102995539c30"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000065.png",
+      "sha1": "ec3fb9b01503e049d94abda62adb4375b8213027"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000066.png",
+      "sha1": "cf341da94476e5ab579a691c6677276c4d83b12a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000067.png",
+      "sha1": "41bd72c39ab8d0e066db40f4f41c09e89c0d077a"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000068.png",
+      "sha1": "503bed6b849cb69aabe22fdc5530f32049f8c25b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000069.png",
+      "sha1": "750b673a5029582be73d3595410891f2b0ba2be2"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000070.png",
+      "sha1": "66b66c9bcd2db5f9f18ff8168065025e787e7b34"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000071.png",
+      "sha1": "041ad97f6df5cd56408448d9888fbf7a87416096"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000072.png",
+      "sha1": "b37fef3ac0ee2751f55aef31476bed19de71a932"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000073.png",
+      "sha1": "e2063def3ef8279f943a12c2a12cc22303ff393e"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000074.png",
+      "sha1": "45ce2ebabfc3dbd2213cea1b6ef888b1502db4b7"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000075.png",
+      "sha1": "bafb5cc80d0ee0d0e2508196b235073dd238cd73"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000076.png",
+      "sha1": "25554293dfbbbac0690ca0a29306e2b2a5058780"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000077.png",
+      "sha1": "1d25257206bc1abf8621bd54ded8c1e65ace2546"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000078.png",
+      "sha1": "0051c3e278608b93f8440f0d0cea368ae9c841d4"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000079.png",
+      "sha1": "6c92a654dfeb251b09dd5a4efc5c72f7ee5ca10d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000080.png",
+      "sha1": "882e7e465f4741e09a3765b03cf1b193065465d0"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000081.png",
+      "sha1": "8d41a5657b0081b02520021c631fce0531c5fc48"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000082.png",
+      "sha1": "3b3cd950d254a2ee7e4859aa84226816055a2646"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000083.png",
+      "sha1": "d2016fbaeee0fe6945ebdcbce2aad9ad87c561bc"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000084.png",
+      "sha1": "62a980cc7453748e74a9ac3d1e64b4634c3fcd01"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000085.png",
+      "sha1": "defd146fb9ef446394fa596aafd8057ac7765ea5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000086.png",
+      "sha1": "98fa255b6833094ab99a70d430de9c2c0445db73"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000087.png",
+      "sha1": "db8d93f963923b27f78e96be5be1eb8406bb9ea5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000088.png",
+      "sha1": "467dc78906b8cca189e83969c39fcc3aca418614"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000089.png",
+      "sha1": "97812774663aa5efce3e1a4a825b771968d54b3f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000090.png",
+      "sha1": "58a79a82ade9d7b9a94d18e020d64a1ce2397a43"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000091.png",
+      "sha1": "d1cd2944b23fdb07b912adcd547e91a736c5417f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000092.png",
+      "sha1": "1eef4e260cf3f55f126c32d202607b6bdeeae205"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000093.png",
+      "sha1": "8c4e48c380588e04c9992127b266f5df99df7383"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000094.png",
+      "sha1": "2b0b11d07d8d5de7ea4e0867afeca3b2ce968299"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000095.png",
+      "sha1": "c2faa80e00143d0cf2c941246d032dac30b2d604"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000096.png",
+      "sha1": "ab3c859a46b7499d6df5356ece475f19224a53cb"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000097.png",
+      "sha1": "eb002bbec625d6298fc3da9868243570b5bfac42"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000098.png",
+      "sha1": "b8c9dd40928b6a436503e5a6d9a62f404ab9e5b1"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000099.png",
+      "sha1": "c2127bf0dda9a3fd0d23a7e201b17f16af09fc1b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000100.png",
+      "sha1": "19aa787a891bd4f29ce3333b44c6f5d4e88b42bf"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000101.png",
+      "sha1": "31ad5d7ae32a0afe1f43661494af47b84531381f"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000102.png",
+      "sha1": "4a92acc96f20f2a39dace94a3e888dbf0aa39bb3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000103.png",
+      "sha1": "791033407a328fc6d379d2b96da8bc72c06d3ec9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000104.png",
+      "sha1": "cd2315bd550010f07fe94552a6c6dcfc69c685b8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000105.png",
+      "sha1": "ef19547e5d650e8734a10039c11bfb01bea136ba"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000106.png",
+      "sha1": "8778d851ee4c87506a0b0f5fa807edd881e2c2d3"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000107.png",
+      "sha1": "5f362bc57b51ba65b5afda35c39e2d80be12e305"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000108.png",
+      "sha1": "bc6dda9207f1e95586425a2ead6d649dd5bb5328"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000109.png",
+      "sha1": "585c46844c8a286e734f14757ba34c272fbeae13"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000110.png",
+      "sha1": "4bf9186ab8b79ade4827107542dbaac35c8b9793"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000111.png",
+      "sha1": "9fd9a96232e5498a4ab04c0a8406264e7fc4d594"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000112.png",
+      "sha1": "656fdf07dc3253c292e2d198f341c9b1f9e54b2d"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000113.png",
+      "sha1": "b878524f6f1ed0d0d248bc19b4f20373429f2048"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000114.png",
+      "sha1": "35d55209e3eb82cc5fec3a1d97f9249e9cf122d5"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000115.png",
+      "sha1": "3fb966ade77e39aec4d3f70868ded5b0e11686bd"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000116.png",
+      "sha1": "9a07f0eaeaaba228e7982ba34a5001c67d4a69cf"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000117.png",
+      "sha1": "09a3e5c0b1a81ed8be35772d739933565056c3ea"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000118.png",
+      "sha1": "3fcc311ce2f062f60b2f5fd926dd6840d018f465"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000119.png",
+      "sha1": "b88e37ef0acb5a509295b09d8a35c138b95c2220"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000120.png",
+      "sha1": "9b3cff816fa067816f417fa38d83e61460ec2132"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000121.png",
+      "sha1": "475a77cd494055f08ed7cb23dcb8d4428d6722ee"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000122.png",
+      "sha1": "8a7a18cb3dd168388e481957d7ae407774e7d5e9"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000123.png",
+      "sha1": "bfe51b9b8350c3a6529f077ea07961879a983ba8"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000124.png",
+      "sha1": "c5d57c4ff83f2a81390e007c7cb7a0674345af1b"
+    },
+    {
+      "path": "assets/effects/Burning Effect/fire_ball/frame000125.png",
+      "sha1": "47bc2d8b11a6210f882b5156b2299873db295d20"
+    },
+    {
+      "path": "assets/effects/Burning Effect/preview.png",
+      "sha1": "a1b8a06910e9818c3d510743bf8bc42cdf75d68c"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/Neon_Devil_Horns.deepar",
+      "sha1": "22a5b00c55000d1532e1ef0074f5940d573032ef"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/models/beauty_single_BS.fbx",
+      "sha1": "4a30402e0f3d33d02191b51c6a15a9d49b578021"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/preview.png",
+      "sha1": "3dd84aa7504129569f8c3a87bd8834ffbf424ce4"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/textures/diffuse.png",
+      "sha1": "4c4b1a9a676c10c4e1fae8dfdc8f996870d1ccfd"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/textures/foundation_small.png",
+      "sha1": "79b0bdc991157a48299d4879c0533b90a2664168"
+    },
+    {
+      "path": "assets/effects/Devil Neon Horns/textures/glowmask.png",
+      "sha1": "1feb39d6f6dd974bed14e50aa3eab6d46bb43cd8"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/Elephant_Trunk.deepar",
+      "sha1": "95f91debb4a5beb3f673e9ee1f183a881c3f0b27"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/models/beauty_single_BS.fbx",
+      "sha1": "4a30402e0f3d33d02191b51c6a15a9d49b578021"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/models/trunk.fbx",
+      "sha1": "967c9502dff7eb87a0118e6c8c7845719cdbab57"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/preview.png",
+      "sha1": "9e802958cf7b900c254c5bcbb12e37d0d8d5d0aa"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/blush_mask.png",
+      "sha1": "32743fef5371e8060b7a09f0f438f2d9c6daa93a"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/foundation_small.png",
+      "sha1": "15982980a14152f6e6f3f6bae9e56e1b27eaea0c"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/freckles_mask.png",
+      "sha1": "46f99f1938effaa83ed4e599e7618a4967aa2b8e"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sampling_mask.png",
+      "sha1": "f81630552fc3a16dc0fe6e33d2d185960b18b87e"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000000.png",
+      "sha1": "09b32410ee587e215407eddec1de4776ec866ef8"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000001.png",
+      "sha1": "edce4d2fed7daf599d62b0d9f1ce2f5dc1bd75ec"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000002.png",
+      "sha1": "589275040fcbce43b260cbe91e8c189e2d6cb58a"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000003.png",
+      "sha1": "d5ab510233ee921bb1b2793ba61f5a857c34aa20"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000004.png",
+      "sha1": "4a6afbaae987babac2688c6c5a082b6ed1061e9c"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000005.png",
+      "sha1": "3dae048f374a41ccf0dc831152d050caca42596b"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000006.png",
+      "sha1": "d058122a5d9c420ef11c9d36bc7fcdc6ea7193cb"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000007.png",
+      "sha1": "55837bf76bbc0bfe85398c4e7d8f33f43ef4a4da"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000008.png",
+      "sha1": "7b35f1149bda20a4efc608ea575fb7a3eec4e108"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000009.png",
+      "sha1": "af70dceda73e0f5b4856d47a2e6cabacdc67721f"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000010.png",
+      "sha1": "1a38c8ee8b4ff641cc913774a4f32b3363650b22"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000011.png",
+      "sha1": "fd6562a292ab66fd450cf5db573dd62e3bdb0559"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000012.png",
+      "sha1": "1b822630480c797245df84686abaf7ddcabdeb5d"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000013.png",
+      "sha1": "cd6e9a738f5361ab318438c4223474f3c14c3f6c"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000014.png",
+      "sha1": "2698c9baaf09bf03b9b0787df0cae65821c48619"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000015.png",
+      "sha1": "4423aa3c7b7894017d5e6af6462aeb31436001a7"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000016.png",
+      "sha1": "413ac113e2c44734d2abab741e06153bc050b8a6"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000017.png",
+      "sha1": "fd0b183f7e43473564f7a05b1812dbadd1bb7d70"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000018.png",
+      "sha1": "f8aa15315714aabf6f094e15b99175be1145854b"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000019.png",
+      "sha1": "90c0524e7c47a1580094512bd518cb9c2c050bc0"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000020.png",
+      "sha1": "5ddaa2a244f8826843e4985245827ab9ab877094"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000021.png",
+      "sha1": "5589671fdc81bea2032cce32c92ba41afde769d5"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000022.png",
+      "sha1": "ee5a659579d21389579acd36ce398ef469113296"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000023.png",
+      "sha1": "3f1005aaffa0ebfa9880e2a1a6ca98e706e167f3"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000024.png",
+      "sha1": "af2caf71d08ea19d6d4608d1dda7b4085145c56b"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000025.png",
+      "sha1": "b45f3fc2ebbecb1de53e0222d58cfa68ab9ee69d"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000026.png",
+      "sha1": "f0acb8551f3873770cde0825bc3f62042973015d"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000027.png",
+      "sha1": "3cb4f1fb22b2ee575dfbd44e18caaf7c0513b659"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000028.png",
+      "sha1": "6cc7d409dcadc5a7e056509c185bf4e4b01651cc"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000029.png",
+      "sha1": "4ae41910a17b9c63dc3b17003ff1421ae2e5f512"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000030.png",
+      "sha1": "d14c1b64d23fb95c4c586a4e1bb3599a4200cb3a"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000031.png",
+      "sha1": "5d4e17e4037b091e8ada273845d04323f02bcfd8"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000032.png",
+      "sha1": "2ba329be6f87dcf22a860f39972b22922572bab3"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000033.png",
+      "sha1": "7301b3d0fb4c5b76b84b25e6d8bfbfdf265fcea5"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000034.png",
+      "sha1": "56cfbdeb96541618be98a26c57ed359d7a6b45d4"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000035.png",
+      "sha1": "d32fc2a19ee8566bacd5a4eeae92c1bb3ebec0c7"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000036.png",
+      "sha1": "36bd24069b49c8a6e1c5fff731661f23ad2283ab"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000037.png",
+      "sha1": "76555efeeccf889a1de2690070896e64daeba4dd"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000038.png",
+      "sha1": "f6f3dc63d93a64ad7c87fe9c89c1e562cc686646"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000039.png",
+      "sha1": "fc7e5803c9691943b26ec23c4e6e42f85b2e9ec4"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000040.png",
+      "sha1": "1f97a517d111c51c1c505ec52ac6f367d0335747"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000041.png",
+      "sha1": "a3783c609701c68dda2067321cbf021ee95c74f7"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000042.png",
+      "sha1": "aed3a51da43a55e69dd24a2481a6fd6ab47ba957"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000043.png",
+      "sha1": "f3300aed11e1d4dc4c1833e82ccdd47f4e2cc3a6"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000044.png",
+      "sha1": "ad98d1ca25f342e6516c4fa3e1e49e33e27cd87f"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000045.png",
+      "sha1": "4fe098163ad32d62e86e346f2a36c6a2ab0c7bf3"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000046.png",
+      "sha1": "0119f9cd8814f1b0b5925905037ddd6f00955fdc"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000047.png",
+      "sha1": "39f1e12f36e36e1c621f326d233d9954d9aa124b"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000048.png",
+      "sha1": "88a312e811caf8fa244e7382b69d076ce1b81a80"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000049.png",
+      "sha1": "b5f008c560b7aa424673951422a11f9f70bd7e41"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000050.png",
+      "sha1": "395bc4ee91170c0ee35ca7bcb0f7e042fc81b744"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000051.png",
+      "sha1": "add3e6d8bba05cbd78afcece91c2aa6b52786923"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000052.png",
+      "sha1": "15be6944b52671e3f263327c977cd78f5ef1f1f2"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000053.png",
+      "sha1": "532f315ff3173d8084869acee02d2004254a77ef"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000054.png",
+      "sha1": "ee2c97afcba0b4eb5206ddc910a8ca4a44c63284"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000055.png",
+      "sha1": "6f3fa98eb73da64e417455d91c80c385bf09f35c"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000056.png",
+      "sha1": "bd7826777b3df34e0f837c7f8fe07cb0ababc670"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000057.png",
+      "sha1": "b306fed8a39ae85ce271401b874d4e045d8d32ac"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000058.png",
+      "sha1": "12f25602a9a0a98dfb23cb6f69645e3b8d81b7e3"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/sparkle_overlay_sequence/frame000059.png",
+      "sha1": "f50c297cc8aef44a6e2748d6180c412e03240ec6"
+    },
+    {
+      "path": "assets/effects/Elephant Trunk/textures/trunk_multiply.png",
+      "sha1": "6708fd3ed17e2a5c4721341b31ad9c1eb494ed65"
+    },
+    {
+      "path": "assets/effects/Emotion Meter/Emotion_Meter.deepar",
+      "sha1": "395a8f5443e03c477a706eff3bb0c09e150b6dc5"
+    },
+    {
+      "path": "assets/effects/Emotion Meter/preview.png",
+      "sha1": "27f69ac892a51be3964bca67ffb8efc50c8d0d83"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/Emotions_Exaggerator.deepar",
+      "sha1": "4a4a8fb8f163c6fd7b9f6a50c519e91fddb81570"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/models/emotions_Exaggerator.fbx",
+      "sha1": "9e18a438a299ca1b68c72bdcec2eebaa047c0bf0"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/preview.png",
+      "sha1": "41125e7ff4353b71c79dc6aca874f677e801e939"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/textures/face_multiply.png",
+      "sha1": "016cc401a0fbe583d0f77b9b7dcbda53a643fcbe"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/textures/normal_map.png",
+      "sha1": "bf6019a388f2ddd6cb09d4b550112340a4d33826"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/textures/skin_matcap.png",
+      "sha1": "752317bc2a546dfdc1da08fe0f4012cf4f6263da"
+    },
+    {
+      "path": "assets/effects/Emotions Exaggerator/textures/spec.png",
+      "sha1": "bfcbe9f7c2fff7dcde72871058bd3b4044a61fd8"
+    },
+    {
+      "path": "assets/effects/Fire Effect/Fire_Effect.deepar",
+      "sha1": "29b48e40730acd702e526fc80943de7b6fc31d4a"
+    },
+    {
+      "path": "assets/effects/Fire Effect/preview.png",
+      "sha1": "2c3ea521b3c27b4e1cd2a58c603a86c84d902e81"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/fire_LUT1.png",
+      "sha1": "f43b3555ff6f964585b6d3fff7de143bf47d554e"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000000.png",
+      "sha1": "340b6be15476ff0a9dc34ccfc89ef0917aed79f3"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000001.png",
+      "sha1": "3b18e9764957e332956d1f06e29662fba7446e6e"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000002.png",
+      "sha1": "c113de2cbfdac59b2a4534d2177836e5949b89cb"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000003.png",
+      "sha1": "39cd3c26eb53eb5c9e3811281beee11cae5f69e8"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000004.png",
+      "sha1": "02b7be88744071dcdc281478397caf203f4a4599"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000005.png",
+      "sha1": "efbb129eff4c57adf1df2a910ece8c095237bd80"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000006.png",
+      "sha1": "775866e62a64f836bbb7b420c454f5c5ac598ef6"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000007.png",
+      "sha1": "22b14e444b70d05e6b5bf1c41f5cf50dc60bb33b"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000008.png",
+      "sha1": "0b79c0c6dd3d26ccab2302c5ecff0a6c37c2c3bd"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000009.png",
+      "sha1": "a2bfe0617555b00f3f8512e12a411b108bcb731a"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000010.png",
+      "sha1": "5850f9b232e2d27c70ab4e54fb6d3fc885004051"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000011.png",
+      "sha1": "566e207fef1dd66efcf8ea4f5b8c6e3ccaba02e8"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000012.png",
+      "sha1": "ef2396369e4e03d1611085f334dc50b713a7041b"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000013.png",
+      "sha1": "d7b7c0a273fbbefee66b5cb4dee2b2ee17f0c285"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000014.png",
+      "sha1": "1f3445c4701a5e418e135fc073ad6a79c74df0ab"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000015.png",
+      "sha1": "da3f9d2bb5fc93139af14992e6b14638a46c6c34"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000016.png",
+      "sha1": "09cfd819afd497fb19db65b1e71b72f03d197f61"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000017.png",
+      "sha1": "1b3fbf9aa97f20b5d51f1b8fdd8ed33de12becb4"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000018.png",
+      "sha1": "ef3e3419d7dcf2289ef2448c945dbf0136cdc050"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000019.png",
+      "sha1": "ac78de65f9148db5dc29fbe2e4f4abf314e212ad"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000020.png",
+      "sha1": "a71f373f14ce1c22017b2d53c065f1976bffe034"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000021.png",
+      "sha1": "88aab504be97f6e788837c77a67ef2dd22372e27"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000022.png",
+      "sha1": "52b055a5506866956b58d42693c2377ebe23a5aa"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000023.png",
+      "sha1": "63ec51943149c8503fa2e155f5ad764a1859ca91"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000024.png",
+      "sha1": "86c840f1c29c0719462dc449f568c40c82bd28c7"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000025.png",
+      "sha1": "7684c3057d8d16b4e55a3fdda786d5dde7e3cec9"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000026.png",
+      "sha1": "ac75b8b7893c994fffb14d00f72d9ad5266d97cf"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000027.png",
+      "sha1": "5667484e5132818d28938a505e8728ad3c804f4a"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000028.png",
+      "sha1": "a067bdb8aa477f0a7b96af4053b8e5596952c7be"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000029.png",
+      "sha1": "9eb80c5fb88ae7a545fcf675e1af95c69c3b29a1"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000030.png",
+      "sha1": "beea4f7186c711ffd1f4769a60501867561d7fe3"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000031.png",
+      "sha1": "fa540062e9bc07b90c0fd5e90ef4af78b528ec98"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000032.png",
+      "sha1": "ecd91ecaeeb69110a898974d129294f3cb850769"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000033.png",
+      "sha1": "033ac567dfeb5ebcb77c5acfaae08c8ffedd29c0"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000034.png",
+      "sha1": "0c3f5a7d2b0ff70af95c46ed017163d16601a041"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000035.png",
+      "sha1": "d75653d8a33e362138c9a5e3a8e3fb0de34bd034"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000036.png",
+      "sha1": "eeb2c3783479d0ae67f0b9b2c6300eff50d39885"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000037.png",
+      "sha1": "84aef056043ed8b63f82f9164d9147e3c4ad759d"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000038.png",
+      "sha1": "92b26b5a12f2a5ecf1a11ae27dc9711f9bbcac8d"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000039.png",
+      "sha1": "3b49b0c33049a9817297407ae2c692bcda37524f"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000040.png",
+      "sha1": "a360bbdac50532d01c93694b840dcdbfcd097b12"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000041.png",
+      "sha1": "35865a8acf59efbf14216d67475404fa576ce0e7"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000042.png",
+      "sha1": "cc5f8facf44ae1167ead3f848e3549d57729b93f"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000043.png",
+      "sha1": "5662672873ce2586a281ae8a208177b85c7775ff"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000044.png",
+      "sha1": "a23061bb19024c9dc79b190fef8d13758ed90dd4"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000045.png",
+      "sha1": "f84ee210734757761e83125e3a6c0f2ea7da3314"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000046.png",
+      "sha1": "10885a0efed432bd60e83e274cd6abdd1069ef1f"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000047.png",
+      "sha1": "bd98a2bccbb421ec0a998922744f242d9ee0655b"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000048.png",
+      "sha1": "df9c98d472b6deb97ff5421def6526d8b90571cd"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000049.png",
+      "sha1": "6d0ea43f9a161a2c990079160c6ba5a721f7c32e"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000050.png",
+      "sha1": "e5338d5657c71d8e6044ed9d8224cdca36504c37"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000051.png",
+      "sha1": "abbe2dc4584d2d2d9bfea0bbd3c53c248cfb2d01"
+    },
+    {
+      "path": "assets/effects/Fire Effect/textures/sequence/frame000052.png",
+      "sha1": "65622d456e8f73633661885aced90433aa14fe47"
+    },
+    {
+      "path": "assets/effects/Flower Face/flower_face.deepar",
+      "sha1": "fcbc4eeb12a9c8373b80f4854f93fdafb1a500ca"
+    },
+    {
+      "path": "assets/effects/Flower Face/models/flowers.fbx",
+      "sha1": "c29bcaaf41b2daed7494b6c9b933b4d0b63fd306"
+    },
+    {
+      "path": "assets/effects/Flower Face/preview.png",
+      "sha1": "d789ab95ab44b1fd04750e38d2ee73e7a581121a"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/LUT.png",
+      "sha1": "00bbe092d344c15aa59d29a1f72fd1ecb8c67541"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/mask_morph.png",
+      "sha1": "f36b6dac97a1fc402db81c8c87188e8188c67e59"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/shadow_multiply.png",
+      "sha1": "f13607640bbd1885b95da898e8eb7765963f02db"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/underlayer.png",
+      "sha1": "3a1b976a41cd255ac74eb82c2880db9e350b873b"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/vegg_diffuse.png",
+      "sha1": "0c1c7d95bd77fa0ee194a57a2d8ada4d069ab360"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/vegg_normal.png",
+      "sha1": "e49856ae55d82a8e8102a8c306ff0b4809074e33"
+    },
+    {
+      "path": "assets/effects/Flower Face/textures/vegg_spec.png",
+      "sha1": "44144266ae4bd7b2964d1dcc9b7d615203a0e85d"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000000.png",
+      "sha1": "a99ef02f6ea39738658efb505850bc99380676f1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000001.png",
+      "sha1": "6844927e387fd9f6a2522d7c0004b297cf15ba10"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000002.png",
+      "sha1": "9a039f239c27e898e18bc400c885e0fd8f95c216"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000003.png",
+      "sha1": "e01d5201d38d52b17966ae78b19f653e134ffc20"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000004.png",
+      "sha1": "62ca373ec4afc3cf9630d92ca1451f6577d075d6"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000005.png",
+      "sha1": "b9e0ad48dffdbf59008c63793523a8b7651d76f0"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000006.png",
+      "sha1": "adbd0b6276349055295d60b070e5047c37836163"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000007.png",
+      "sha1": "81fd28b40e8b73cd4c72080b8caace2655e88b40"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000008.png",
+      "sha1": "6ff0a8c50bb83479001a5009d43cb875ba939ed2"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000009.png",
+      "sha1": "f1521dba287c09e4b158e46ff1a404cd69837c19"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000010.png",
+      "sha1": "640736b47278081254dd187c0ccf698f06a953b7"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000011.png",
+      "sha1": "c123d1485632a7edeeec98fbe5615c97d8abead2"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000012.png",
+      "sha1": "fd7a4b54c4c319ed12082e94bf14e581566f4f56"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000013.png",
+      "sha1": "439842705d1597e6b3e11aca0c7c8d5ee19e5207"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000014.png",
+      "sha1": "2c4710e2be6daa0595fce1e7cde6473c4936aa79"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000015.png",
+      "sha1": "acd41d9e41c56bd9ab006b4b0316be281e52864e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000016.png",
+      "sha1": "7aff183e73d83c1cf373305ddddcc10717ed53c3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000017.png",
+      "sha1": "396c65001ef7f1904de16c0d679cb9b7cc7d7467"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000018.png",
+      "sha1": "d85eb1b50c5f65bfd913deb282b32720d1cadb4f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000019.png",
+      "sha1": "9a5489ba1fa461f81a5b23c1e013306ff39b9d7e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000020.png",
+      "sha1": "d85b17c859c4530a3a7ac50ba55f90afcc346b02"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000021.png",
+      "sha1": "f2fda08eaa087d9ef977d003624d84b7899b4d96"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000022.png",
+      "sha1": "d6a2a616415b41d5b1724273f4c94f649724fe88"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000023.png",
+      "sha1": "64c4e64ecf4ba9e714fd829102aecf03aff590ed"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000024.png",
+      "sha1": "051ea5f351b12b8de8537526dbca8548812321a1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000025.png",
+      "sha1": "8e69ab9c274d2d9e864fe532d30f62d49339a162"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000026.png",
+      "sha1": "2e90883330f52d40ba4d6bec3a29a07aa91b51a9"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000027.png",
+      "sha1": "6365051f9a7177650eff2d61d04df8b7c8af09e1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000028.png",
+      "sha1": "aadb59624551d75cd619784634ef7f7feba33949"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000029.png",
+      "sha1": "ccd0f3b23585306d9b9efcdaf724a1277293b641"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000030.png",
+      "sha1": "87ebe1a32b8f47cc06caca3c20109f2c0c5d71c6"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000031.png",
+      "sha1": "7c9a7ff16a4c3e445e83fa97669d7428dc7b6bdd"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000032.png",
+      "sha1": "6128e33fdfe8f25ef9889b58031a589b41c2a8ff"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000033.png",
+      "sha1": "b613991bec7decc2f98f367650e3d8e9bde7b6d3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000034.png",
+      "sha1": "23727b1920c4f6f014def890fcd9f07a0292709c"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000035.png",
+      "sha1": "37714ccbefd9aac39393a3f787f69534ed479a75"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000036.png",
+      "sha1": "7380993cd6c65a6dc5f54692702ec79cf658cf85"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000037.png",
+      "sha1": "c35d164f2e01ca2a312177a4734598d7ddf1530f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000038.png",
+      "sha1": "71c6480e000b63f43b828445e53a761ef5423112"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000039.png",
+      "sha1": "7b26d1451add0cde2eae6ddf34a86e01fdb2a15e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000040.png",
+      "sha1": "90b927aab143c3a0370c1f8c29dfe7f6913db713"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000041.png",
+      "sha1": "2c9f43e126e8814b2fbf9f50caca5f76a7068fcc"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000042.png",
+      "sha1": "695de5bdbe36c9e84255105402d7d1d2640c4e5f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000043.png",
+      "sha1": "5d5378d640256ea1c0587e60a3447ac830b9b309"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000044.png",
+      "sha1": "9a66bce3e45c979e1f87cc5f889c87c927f37557"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000045.png",
+      "sha1": "f6c5e3023d7dafef986e9e295e054a18ab6c2dde"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000046.png",
+      "sha1": "b92c4ae87bf03c493916d893c6464ec5461e220b"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000047.png",
+      "sha1": "178cc52db2c29b2f360e72307fd965bf1c10c63a"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000048.png",
+      "sha1": "da96c84de6cbe417ac051bd56362e88635358f70"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000049.png",
+      "sha1": "a8eca2f76ccec90b338ba792435d049516146caa"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000050.png",
+      "sha1": "0f8750362db95d7e69998642650e5f243be96e09"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000051.png",
+      "sha1": "c0c15b9e095df74fe0bb9d662c6e168f1c4dcc78"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000052.png",
+      "sha1": "108657e8d88a1ced0f61da658d1bc6a64ca810a1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000053.png",
+      "sha1": "3ec8865b6ef6c29a176d1d001112155df737b9f4"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000054.png",
+      "sha1": "b32f565a0c6c9c551fbdc2255d4741cf65250d21"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000055.png",
+      "sha1": "11d3d264529268ec57a364b74c743209bdde66e7"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000056.png",
+      "sha1": "4104fbe9a926d25d9671518eba7ce92f01143ec3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000057.png",
+      "sha1": "f2ab4ab02944e791ed648c3135037490c1f80443"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000058.png",
+      "sha1": "6df320cc160c553eab0f340f55ca252448c0f852"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000059.png",
+      "sha1": "23454ae8b0ba4e92bc7686342bbbda1add23b5b9"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000060.png",
+      "sha1": "084f1fa7071325553a96c489cfb0db135d6d98ef"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000061.png",
+      "sha1": "f54796f8faa0d618599dda85d4d633b59db3b1c1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000062.png",
+      "sha1": "b78cc486acbbf2d12033079e664d707741bd5090"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000063.png",
+      "sha1": "e739be8a3849e66d567ca186dc9736cda9130efd"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000064.png",
+      "sha1": "f8cb048fcd581f161b141d128a9530bb2f8bce18"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000065.png",
+      "sha1": "b5fcc0f07f08578efde178793cc0a86d91501043"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000066.png",
+      "sha1": "e7960ee50e3cf1790ad7539a9e5eefb8fad8eea1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000067.png",
+      "sha1": "c5ff5531339b3b9af7f94e6f3d1decdfde2536ea"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000068.png",
+      "sha1": "958fb9df6e778f84ac34be73fb0f6f9fdee62bbc"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000069.png",
+      "sha1": "e831b43a0dfa431397ac2f5e83f21eade53bc577"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000070.png",
+      "sha1": "9b5930cf793356a10f90e285e7afa4aa98a41dd5"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000071.png",
+      "sha1": "aa55147468bfa95558f01d1b9244ec64aec4381f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000072.png",
+      "sha1": "feea829ab840a3803531bf570afcde155585f621"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000073.png",
+      "sha1": "41112aa0a773249d10a5c23ede1e3eabf31fcefc"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000074.png",
+      "sha1": "4006ba6ba86c89ea57db66ab27e228f8ff3afe2e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000075.png",
+      "sha1": "760f1bb5e072004b1944ae95f3c9e36b622c84fc"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000076.png",
+      "sha1": "36186c89311079a0ddf9c8594a986c9afe843ee3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000077.png",
+      "sha1": "ae9e28ed53227f764f50137e19324471f47bed3e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000078.png",
+      "sha1": "d90d95eec0462b69ecc72e6ec1e4d6e0ffe8c55b"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000079.png",
+      "sha1": "b151bce46b3ee322ec3906a817b35be221ab0dcc"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000080.png",
+      "sha1": "179f6bd517a01488d328d96f45702da3ba84f5aa"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000081.png",
+      "sha1": "744d94b3d38fa8b48ebef36557130de5c9eb1b9c"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000082.png",
+      "sha1": "4095820c5e1e78413fb0564f8669243ee01c0418"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000083.png",
+      "sha1": "bfc5ab8bcc09a46fc773af6a5b9fdb431ee388a4"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000084.png",
+      "sha1": "cbc5390b6b2707a351540756864169705cccf874"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000085.png",
+      "sha1": "821dc52d29c3902f7fd2fdeba8243657c4da8930"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000086.png",
+      "sha1": "4cc85e8121348dbc75a14131e4247707cfb04eb2"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000087.png",
+      "sha1": "ea6917035c732504032df17547efccba6d24d572"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000088.png",
+      "sha1": "9cc395980efed7a0444f9a52167c5a24d623adc7"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000089.png",
+      "sha1": "4642d01d0b866ff306e2df6e20836d57742e3479"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000090.png",
+      "sha1": "f49e494fb2ec7d96bc32b06bbd6d77c55ae19b44"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000091.png",
+      "sha1": "1799ab296501f5ba0f8a2db3831acd3637b7a9a8"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000092.png",
+      "sha1": "fced215db320ed4c6dde57bbaf4362942c60d2bb"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000093.png",
+      "sha1": "b117036bcdd86ad7f82db59c60c3f0411f76b578"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000094.png",
+      "sha1": "3f7ece835798dabdc0f393a0dff21e4ab6a8aa32"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000095.png",
+      "sha1": "f5acb37aca2f7be85faeb76123b4434f87d8d3b7"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000096.png",
+      "sha1": "0336cf82b96705eed6283bbcd690f103148916f8"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000097.png",
+      "sha1": "16a2fe85afbfab01df719e8f3021f23601b3e734"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000098.png",
+      "sha1": "59b2278c5c58b0d0a1bb9ab4d60fe82993213bd9"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000099.png",
+      "sha1": "45b0f25221bebfebf4ceaeca690781e7f958cfdd"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000100.png",
+      "sha1": "67266820674b81f7ff022f670dbee37cf91fc08e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000101.png",
+      "sha1": "1acfefdec1e3ace26a6c65ebfb68499c5c61243e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000102.png",
+      "sha1": "b5aa1f8590fa8864d9d57c69bb20857125887bf2"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000103.png",
+      "sha1": "8ac60be705f8ef3ed36364312e47434c55bd9d94"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000104.png",
+      "sha1": "a6e661f4c90defd1a2ce5f52e0d80be444a7cc9f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000105.png",
+      "sha1": "0f3d767e13398b14117261713f5d11e20f20e83f"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000106.png",
+      "sha1": "21bc6b263f55cab82a9df644c952c51be25d223a"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000107.png",
+      "sha1": "fd6d3d3c30f16f20d285b872222cc881cdc42802"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000108.png",
+      "sha1": "186fa0f39e2e38260f22b0784dc6c523b2c67141"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000109.png",
+      "sha1": "f23b9778a85040a7d62f0b939096d98c926c6eb6"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000110.png",
+      "sha1": "fa7579288a30daff139939311b0a580ada33119b"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000111.png",
+      "sha1": "3730a57f3ae833253253cc5eb1b465dfb5e99683"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000112.png",
+      "sha1": "e3d8d28fd9eab45eeea33bfbccba3e1ed2951c8e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000113.png",
+      "sha1": "2ce606a701b3c42edfa7cd23a3dd939ee06a05c8"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000114.png",
+      "sha1": "a995ccf075ffca1badd51a921e7ef4c181032f97"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000115.png",
+      "sha1": "e16b48908c7b18baa9b95909506d8a53412ec579"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000116.png",
+      "sha1": "8e0bc5d17824b2a010a7921c9cfa8067858fe264"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000117.png",
+      "sha1": "165531265f51479dfe2e693538ecc029d0d57eb0"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000118.png",
+      "sha1": "09f5c066926f4eb06bbaf90901ed4eaf77029bf3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000119.png",
+      "sha1": "63938acbdc91f21f3b3c8ddd7cbdfcafb9567802"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000120.png",
+      "sha1": "79ae3098fe784a3f2ea07de62802c97b159eb792"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000121.png",
+      "sha1": "eb3b7ff647ddcb09b4a8f8717193acab193f40cd"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000122.png",
+      "sha1": "d85719dcce5470b1953f61a9e96d4d434e04a9cb"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000123.png",
+      "sha1": "eb0c93dd2b02eb21df2098d6f82dfbff017f1c21"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000124.png",
+      "sha1": "fc704bf8dc2cef3b473d01216f381b66f405b4f2"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000125.png",
+      "sha1": "e96a10f97bb63c32e5aeceb6c1e4f4d6c3762e46"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000126.png",
+      "sha1": "6aacc3d1f318907ff38d79925712fb4aa46f70f6"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000127.png",
+      "sha1": "86d4e42900039e8df8622d622b7f652828f0083d"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000128.png",
+      "sha1": "3603db3be6d025d687904dfed5f56ec8129a87c3"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000129.png",
+      "sha1": "5d39cfa6771789ae6e6dfbe6090c5b4669599df1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000130.png",
+      "sha1": "f7295ac1e03c8c778b1d219243438dd69e5b6931"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000131.png",
+      "sha1": "4ec75d2611d7427f1867bb00293baba9db0c5f19"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000132.png",
+      "sha1": "eba75c2a4256a1cefde5110434e2bf0e22eb9d63"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000133.png",
+      "sha1": "46163a26d9527248f451fcc69ae949f4e7db6563"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000134.png",
+      "sha1": "749a0bc8e241c4e4247dbabaebc63e4d74f956cd"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000135.png",
+      "sha1": "075b4ba761ef67be90cd3a783f8d931a9b98098e"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000136.png",
+      "sha1": "59ccee36b6d63d4e4904678132a622ee8122ade1"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000137.png",
+      "sha1": "0c7ce0948d10427e209ef22fd78b669365392175"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_animation/frame000138.png",
+      "sha1": "ceb40aabc30c5e2677f1a530655810911aae543a"
+    },
+    {
+      "path": "assets/effects/Galaxy Background/galaxy_background.deepar",
+      "sha1": "2959c76c4fba9171717d2b16ee228308b1241af7"
+    },
+    {
+      "path": "assets/effects/Hope/Hope.deepar",
+      "sha1": "73b8ca558412c380bc7aa9fb42eec9fdd244dac2"
+    },
+    {
+      "path": "assets/effects/Hope/models/Head_Template.fbx",
+      "sha1": "8c9c09ede648312f070c234b6b8f199122e5cbf6"
+    },
+    {
+      "path": "assets/effects/Hope/preview.png",
+      "sha1": "144390475cf90f501f56bafbe772b1a59c142cec"
+    },
+    {
+      "path": "assets/effects/Hope/textures/LUT_blue.png",
+      "sha1": "902624aece9a0273472dd5c537f31353de391c11"
+    },
+    {
+      "path": "assets/effects/Hope/textures/LUT_red.png",
+      "sha1": "34ef8c496446d08c1feb1874c37f9b510647b76b"
+    },
+    {
+      "path": "assets/effects/Hope/textures/red_mask.png",
+      "sha1": "cfaf6646f020581676eb5318d4bd4e6ecb452d55"
+    },
+    {
+      "path": "assets/effects/Humanoid/Humanoid.deepar",
+      "sha1": "d55892fe97d2adc83768a83fef4ca2979cd8966f"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/CAPS.fbx",
+      "sha1": "a8fed1153b9f50ceb372d4af31ab019abab05cd1"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LCD1.fbx",
+      "sha1": "16cb2518fec85c3fda55bc480cf74ba61504b065"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LEDS.fbx",
+      "sha1": "b4bdf1b03ff7fe32cec3c867b5cca24aa713d46a"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LEDS2.fbx",
+      "sha1": "a2966230eeea68d2dd922c92042db25a3a1d19c1"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LEDS3.fbx",
+      "sha1": "9285f0a5e126354763d2cd5c36ed311b1b3dd8cc"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LEDS4.fbx",
+      "sha1": "40eeb28de348b051939aee786f3a69ca44657f0f"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/LEDS5.fbx",
+      "sha1": "5a6271dc5ad331cf916e999501c3b253026d0ed3"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_cheek.fbx",
+      "sha1": "6bfab77fe7790ce2cd3390b9edde45a7b8025985"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_cheek2.fbx",
+      "sha1": "f3ea83b7a57b25d0db4c86d47ba8070c659e1c25"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_cheek3.fbx",
+      "sha1": "da2a8d3bbbaf41f9d3ef2c3a2e46d7edbd208d19"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_eye.fbx",
+      "sha1": "cdd913b6e6072fab0571c96c9b3a55c05bcb2042"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_eye2.fbx",
+      "sha1": "452f6c5212f173f2902882114826c861442ec1bf"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/L_eye3.fbx",
+      "sha1": "e544c9f65d77a9e98093168794b3dbcf0c9c6f9b"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Nose.fbx",
+      "sha1": "cf7f52c5785560d224d14322b6529b14a68f12e1"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Nose2.fbx",
+      "sha1": "c3258cd6ba01e17d439bb59a2b196522ba61e6a7"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Nose3.fbx",
+      "sha1": "42677ea254167df7389d83402d00ab2484f0e5c6"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_cheek.fbx",
+      "sha1": "97fa2a7de07f386875438c7562b3c0f15eefdee1"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_cheek2.fbx",
+      "sha1": "f2683a4ad0cc0a425f5c7e58432c565376b5dd19"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_cheek3.fbx",
+      "sha1": "0dfbecc63d6fe3bc446bf15866c0ce816a470d27"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_eye.fbx",
+      "sha1": "d7f5b4d818d68fed05d059021b36491d7e15f280"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_eye2.fbx",
+      "sha1": "a4c0088295bc5a907c9a350fb6764b50a4df77cc"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/R_eye3.fbx",
+      "sha1": "ba34f27e47ae8f23d6798db9af7bf6a67b95d348"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Timestamps/100f.fbx",
+      "sha1": "eb38c989cce1c5094db238783483db37ce7a6495"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Timestamps/10f.fbx",
+      "sha1": "fce5cb1eb03c0624c6de4edf51361a8e3aa339c2"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/Timestamps/80f.fbx",
+      "sha1": "8d9aa3ff040becbf5ca707ac359dd6d7828f4d57"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/chin.fbx",
+      "sha1": "ff53926be060553ab2dc7bd325c021253c31e5b9"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/chin2.fbx",
+      "sha1": "33254a875ee5e83021d1667c07555779ff99f449"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/chin3.fbx",
+      "sha1": "99a7191ca2085b92863ba9c7b6f85e2a17e3f0fd"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/innershadows.fbx",
+      "sha1": "7413abac4109526096780e58efe61868d0bd25c4"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/internals1.fbx",
+      "sha1": "5154d13aa802758cd6f041866db09b415c1fb6ee"
+    },
+    {
+      "path": "assets/effects/Humanoid/models/internals2.fbx",
+      "sha1": "c266af6c5bd0c08308c30797dbd1e2f1ff3626a5"
+    },
+    {
+      "path": "assets/effects/Humanoid/preview.png",
+      "sha1": "71b7cd24f6c5a455d1cfc6286f9d0d2707adc4f9"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_black_matcap.png",
+      "sha1": "bc453be115c453fdc6b10be8ab38a1a7dc503d41"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_copper_matcap3.png",
+      "sha1": "3bd837ae5e1b62eb9f916547db968671978e1d18"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_glass_matcap.png",
+      "sha1": "b39ccc9870d08b8b1f2ce7538b253ec721d7e75c"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_metal_matcap2.png",
+      "sha1": "591ff22d700854e34a32b7913a5c1246eff6694c"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_red_matcap.png",
+      "sha1": "c975c6e85924beb86eb0a0ab32d6295935dd7f82"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LED_white_matcap2.png",
+      "sha1": "489e76be92ff80d0830f5386d2c08b02bd953fd3"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/LUT.png",
+      "sha1": "0feca1804ba4279089d97f83593fbacc7d3fcaa0"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/blush1_4.png",
+      "sha1": "c712546b23eb7427ac4df3c9af96f9f7d687544d"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/blush3.png",
+      "sha1": "b65769bcbd9b870f8a412a4fc2009deafe570e1e"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/glow.png",
+      "sha1": "cccc45e151b03279cc21d50bd22f5be2ef7dc215"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000000.png",
+      "sha1": "f37ff8c5075985fc28a3fa3b89c26a14f252abcf"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000001.png",
+      "sha1": "df059475ef2506eef555470d6d9df8247a8efa9b"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000002.png",
+      "sha1": "cd98c4b4d2093a4f98f27badf9825d2b8abb63f5"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000003.png",
+      "sha1": "678fd3ebeaccf76317634b516332bab2f3cb5699"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000004.png",
+      "sha1": "916794c2920dae12fa21a0d61312ccb67698cc72"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000005.png",
+      "sha1": "89888bfe99cda9c5a4405a461cd6428165292152"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000006.png",
+      "sha1": "306e8bbaed2131bb5e4c70e22747449b168bcd6d"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000007.png",
+      "sha1": "2494c27777b5fbbefca0337e7ac6f667f1427766"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000008.png",
+      "sha1": "baf8849d31780b1d27b82c179f9ee5b22e105cef"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000009.png",
+      "sha1": "9de3cdb416682bcb52ce4dc1d4e51ee613c49136"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000010.png",
+      "sha1": "a4a92a837f6730145aebaacdec210af9acd2c4a4"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000011.png",
+      "sha1": "e1bc47487c7c73eda4aec7296a7fc1186f204401"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000012.png",
+      "sha1": "68923550322082da3e073fcc3fee8d8cac849af3"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000013.png",
+      "sha1": "ac428f98052a537e06690a348dad7d52900176f8"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000014.png",
+      "sha1": "5c103897bbf42afbce6af73aba33c33a247dc123"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000015.png",
+      "sha1": "05ed283d803ba9a2a5cb4ce5c82cf00a5d0982a2"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000016.png",
+      "sha1": "18af3804a8585156bd86597baf0cdda9ac00d10a"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000017.png",
+      "sha1": "62281766ff907134d0d00dd85a9908930715645d"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000018.png",
+      "sha1": "26dedd430f5fe1cf020d3da5aa4430bfe3b3f299"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000019.png",
+      "sha1": "24d95e701081706c553f9ebb47167fd490023928"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000020.png",
+      "sha1": "e9c1bb90d4db43404421823b1ffd507dd2cc195a"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000021.png",
+      "sha1": "eb98c2329cc48af71428f61a27a2fbe4cc343dcc"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000022.png",
+      "sha1": "e2870c4f7a294ac7c72b5afecf694b304be0125f"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000023.png",
+      "sha1": "3a2b5d5141d82592bcee1b1f64a59ee8988462ea"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000024.png",
+      "sha1": "60b90ea7afb98a58e634fe9d672e35ffe46b5569"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000025.png",
+      "sha1": "6edbc47c7d704006e5aa0e7de38d179ce8e32cc8"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000026.png",
+      "sha1": "4f328a682b9a63eb06f2cc36ec99ebc29557ae5f"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000027.png",
+      "sha1": "5657398d13afb2c560426bc8224b00b6462421e1"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000028.png",
+      "sha1": "ab5ae1669985f9fb973cf47c7ec6f455485e8e52"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000029.png",
+      "sha1": "a60e753ed8acd23d93dc074419a1c7969ae1848b"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000030.png",
+      "sha1": "8e52aae198bfa86dcb0b493e4adfe3a6bee3f49b"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000031.png",
+      "sha1": "3fe8393619eb496d97ff6ee6fa23e96e48698df0"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000032.png",
+      "sha1": "2fd35b4c3e7184894646f7e108f4232dacdedc43"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000033.png",
+      "sha1": "eddcd9a7a75fc4a4f8c12663a507a2e4efb8b2c5"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000034.png",
+      "sha1": "5aaa47e9b970916c124bd7cee6c8058d4825d431"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000035.png",
+      "sha1": "af187f276899837d9b0dfcd7d06258ca7b43643e"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000036.png",
+      "sha1": "4f7a43da052ee81bd5d9100993c6c80502d6de21"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000037.png",
+      "sha1": "fb6a19c092d0d704a41b8129dcc6de33d1ca89da"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000038.png",
+      "sha1": "d365ae66cdf2252cb40eed460f9b9332b156ca70"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000039.png",
+      "sha1": "0df364868622b52c7eae4804081d8bbddf9fc560"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000040.png",
+      "sha1": "f889e1ff1d4e80a3dee4caccecc6e451e615e680"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000041.png",
+      "sha1": "b1c8bbfa656e7283175f557ec0d208b7b0dba6e7"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000042.png",
+      "sha1": "b3df4b3587d8508b115de35333a3e61f65020004"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000043.png",
+      "sha1": "4ed01df8fe4080d3d83ca5576c20382a1164b88a"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000044.png",
+      "sha1": "0e41eefa1792ff49301da4df89788268013f4cac"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000045.png",
+      "sha1": "510a70ffdd07dc22dfa8d4a1c9674b12b78b45d6"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000046.png",
+      "sha1": "f93f336bda8ebea616bde6e25869ffe8b05f3d05"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000047.png",
+      "sha1": "955be4d58589e0266290c438b8b89a17cf5a8646"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000048.png",
+      "sha1": "79a93f2e88f27a1eae83a2df99a2bb43c6369a56"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000049.png",
+      "sha1": "f513cae104f7e7a09465476e6fc06c2389766fd8"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000050.png",
+      "sha1": "0ed0ddc4d47d394ef2aa2ea8671b6f6f55715fed"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000051.png",
+      "sha1": "07b240f95cbfde0cef9a135458d35bac1ec6a30b"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000052.png",
+      "sha1": "83f2878d085bfba1fcb60ebefc1ce6d6bc7b05df"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000053.png",
+      "sha1": "bbc4f467d8606c0ae6d2908d9bba783c38ffce3c"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000054.png",
+      "sha1": "fa52061d9ecdf71065bf0bd65a11267546f1e83f"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000055.png",
+      "sha1": "40657ebbd70cbc2fa67d21dd6fa645a2db18a28c"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000056.png",
+      "sha1": "726cb6cd61deddb57977096e033a518e53747673"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000057.png",
+      "sha1": "ebf02edf9d6f71ff3a6cb8d441b33fd9ed80a253"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000058.png",
+      "sha1": "c25649d4de125c396c35017e33d37386721ae682"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000059.png",
+      "sha1": "fae1b9ad9b88b65fbf7ba60f14b13cb7f1ca7356"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000060.png",
+      "sha1": "e2b51c0faf86dfb6cc35c1e095d580b155ea185f"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000061.png",
+      "sha1": "d607dcacb1a6a414773e70b47ee244bbcfb25eb8"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000062.png",
+      "sha1": "ae3848cc0c9e0bd2ce748f4f8780a1d86d6eaaa8"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/sequence_1/frame000063.png",
+      "sha1": "801681dbcdce099552707344526f46a0ad728589"
+    },
+    {
+      "path": "assets/effects/Humanoid/textures/shadows3.png",
+      "sha1": "ec20ebad9a01c243ee0936a4fec39f9b4726caf0"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/MakeupLook.deepar",
+      "sha1": "4c675e9adafe9464365fdfcd4c7d35bb58072046"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/models/beauty_single_BS.fbx",
+      "sha1": "4a30402e0f3d33d02191b51c6a15a9d49b578021"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/models/eyes.fbx",
+      "sha1": "6fcf302a328466f49e0e7ca21fd12d4fb34e751d"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/models/eyes2.fbx",
+      "sha1": "e9c98a13552e24a85b754a1fd8f07cab3a10f917"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/models/lip_gloss.fbx",
+      "sha1": "3b9a20ee7e468d00bb351d5666eed0b34a191cd9"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/models/lips.fbx",
+      "sha1": "2ce14e43421323b60811b71e96fd586b92b24f0e"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/KardashianClassic_eyelashes.png",
+      "sha1": "cedb51001b27e09658c201d6a1a6675f8b647a00"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/KardashianClassic_eyeshadow6.png",
+      "sha1": "e3a35ecda2d06fa87b0eed4442d978ce9210a4b1"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/Neon_Colors_face_matcap.png",
+      "sha1": "5bdb1c57ab0353c9cbc02079a8d9ed57d474fda6"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/Neon_Colors_face_normals.png",
+      "sha1": "517d92ed8f7f1cfb5b87167c316e61b6be93e682"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/SL02_highlights.png",
+      "sha1": "11e909bcf3df836c1a0333789251cbaf2373e634"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/SubtleWhite_lips_Color.png",
+      "sha1": "bf968f59ec40243bd21ad582c3376d917b7f7372"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/alpha_new.png",
+      "sha1": "f2e537f58a8ba1ae58b2b403dd51bc3b9bb30daa"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/blush_C.png",
+      "sha1": "b6c41f6ce0b2f1655563ad258677f9c0ceb9efec"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/blush_heart_large.png",
+      "sha1": "7cc1baec858b460bb22d32e4fc8edd3424105e26"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/blush_round.png",
+      "sha1": "1de402691cabcdf34ece574c7479427c1c7f63bf"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/brightLUT.png",
+      "sha1": "0e79727a0e7baebce78f751904ef7b63480e44ff"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/contour4_large2.png",
+      "sha1": "0f058d11696c2dbb3b49764510a4d5acce816662"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/foundation_small.png",
+      "sha1": "79b0bdc991157a48299d4879c0533b90a2664168"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/glitter_face_specmap_fix.png",
+      "sha1": "2617149f6ff71df7234c2837e79c8047ae7a20c5"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/highlight5_large.png",
+      "sha1": "a9c53436c8a1176b6ce85df0580ec9e2e7eda107"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/lip_Gloss_matcap3.png",
+      "sha1": "af90b0e75d929c42ddcc4831b15a42214fd132d4"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/lip_gloss_specular.png",
+      "sha1": "3db7c77b552e656eb8bf50a8f706912e2b0b5be3"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/lips_normals.png",
+      "sha1": "91e6f1a86bfa34e3f39ff54698fed0b6a0cca8ac"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/matcap2.png",
+      "sha1": "98e6a15d58936f0ced7608972c900f466548708a"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/matcap_soft6.png",
+      "sha1": "af90b0e75d929c42ddcc4831b15a42214fd132d4"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/normals-roughLV4.png",
+      "sha1": "e6c37e20e0abe11ae05668de3da264450d59bd39"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/original_face_smooth_mask.png",
+      "sha1": "10319348c338ae74d30cc575d30309e5669cf7fe"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/smokey2.png",
+      "sha1": "76c29cafe0cb6bc9c8525b0ac1988f656e795338"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/spec3.png",
+      "sha1": "4951d483c82eca877a43b4b48ba2272166bbe328"
+    },
+    {
+      "path": "assets/effects/Makeup Look Simple/textures/specmask3.png",
+      "sha1": "66a465ed13f5620e0f98d2d09f5f4a83341fd0a4"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/Split_View_Look.deepar",
+      "sha1": "868ad0479ae16155e8b401863f428fc1154e0f2d"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/models/beauty_single_BS.fbx",
+      "sha1": "4a30402e0f3d33d02191b51c6a15a9d49b578021"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/models/eyes.fbx",
+      "sha1": "6fcf302a328466f49e0e7ca21fd12d4fb34e751d"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/models/eyes2.fbx",
+      "sha1": "e9c98a13552e24a85b754a1fd8f07cab3a10f917"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/models/lip_gloss.fbx",
+      "sha1": "3b9a20ee7e468d00bb351d5666eed0b34a191cd9"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/models/lips.fbx",
+      "sha1": "2ce14e43421323b60811b71e96fd586b92b24f0e"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/preview.jpg",
+      "sha1": "53d241163d1275e6fdb20098f0f5bb7c25a543b1"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/KardashianClassic_eyelashes.png",
+      "sha1": "cedb51001b27e09658c201d6a1a6675f8b647a00"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/KardashianClassic_eyeshadow6.png",
+      "sha1": "e3a35ecda2d06fa87b0eed4442d978ce9210a4b1"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/Neon_Colors_face_matcap.png",
+      "sha1": "5bdb1c57ab0353c9cbc02079a8d9ed57d474fda6"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/Neon_Colors_face_normals.png",
+      "sha1": "517d92ed8f7f1cfb5b87167c316e61b6be93e682"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/SL02_highlights.png",
+      "sha1": "11e909bcf3df836c1a0333789251cbaf2373e634"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/SubtleWhite_lips_Color.png",
+      "sha1": "bf968f59ec40243bd21ad582c3376d917b7f7372"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/alpha_new.png",
+      "sha1": "f2e537f58a8ba1ae58b2b403dd51bc3b9bb30daa"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/blush_C.png",
+      "sha1": "b6c41f6ce0b2f1655563ad258677f9c0ceb9efec"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/blush_heart_large.png",
+      "sha1": "7cc1baec858b460bb22d32e4fc8edd3424105e26"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/blush_round.png",
+      "sha1": "1de402691cabcdf34ece574c7479427c1c7f63bf"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/brightLUT.png",
+      "sha1": "0e79727a0e7baebce78f751904ef7b63480e44ff"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/contour4_large2.png",
+      "sha1": "0f058d11696c2dbb3b49764510a4d5acce816662"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/foundation_small.png",
+      "sha1": "79b0bdc991157a48299d4879c0533b90a2664168"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/glitter_face_specmap_fix.png",
+      "sha1": "2617149f6ff71df7234c2837e79c8047ae7a20c5"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/highlight5_large.png",
+      "sha1": "a9c53436c8a1176b6ce85df0580ec9e2e7eda107"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/lip_Gloss_matcap3.png",
+      "sha1": "af90b0e75d929c42ddcc4831b15a42214fd132d4"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/lip_gloss_specular.png",
+      "sha1": "3db7c77b552e656eb8bf50a8f706912e2b0b5be3"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/lips_normals.png",
+      "sha1": "91e6f1a86bfa34e3f39ff54698fed0b6a0cca8ac"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/matcap2.png",
+      "sha1": "98e6a15d58936f0ced7608972c900f466548708a"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/matcap_soft6.png",
+      "sha1": "af90b0e75d929c42ddcc4831b15a42214fd132d4"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/normals-roughLV4.png",
+      "sha1": "e6c37e20e0abe11ae05668de3da264450d59bd39"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/original_face_smooth_mask.png",
+      "sha1": "10319348c338ae74d30cc575d30309e5669cf7fe"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/smokey2.png",
+      "sha1": "76c29cafe0cb6bc9c8525b0ac1988f656e795338"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/spec3.png",
+      "sha1": "4951d483c82eca877a43b4b48ba2272166bbe328"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/specmask3.png",
+      "sha1": "66a465ed13f5620e0f98d2d09f5f4a83341fd0a4"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000000.png",
+      "sha1": "444a04fbbdbf286e5731926876c3b0207e01b3ff"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000001.png",
+      "sha1": "444a04fbbdbf286e5731926876c3b0207e01b3ff"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000002.png",
+      "sha1": "08aedfb9d733abc53e02b9f6160132d905c1a8ce"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000003.png",
+      "sha1": "1d5275b026debd0257e1a45c40b831557816bc18"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000004.png",
+      "sha1": "3249901806374eb2356cd391b450869c1182895a"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000005.png",
+      "sha1": "cbc1ca4a5510978603f02e715fce5850dab28e67"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000006.png",
+      "sha1": "96baa5ca3fe1fa55182c83e345cca6892966cf2d"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000007.png",
+      "sha1": "fc9aaec0dda41c75655cd27683a28380c22867af"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000008.png",
+      "sha1": "6b36b94ed9dee546bb1d179db84146a566a7c6b8"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000009.png",
+      "sha1": "1dddd40ca58c9631ef74f3e2430dd6b8b5a51176"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000010.png",
+      "sha1": "be935d5337b805dbce727ebdbf1bd32c73b0c442"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000011.png",
+      "sha1": "0b1e5f964713f6237d26295e8f31723447b52fb8"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000012.png",
+      "sha1": "d549167d5facb1d67464ac6bbeb790556cbd83b3"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000013.png",
+      "sha1": "5857a68b2ec91496a26da15185b6a97328959994"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000014.png",
+      "sha1": "100984a7bf5cacce5b5f6f2c00a1b51afce9e938"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000015.png",
+      "sha1": "9ffb7d0ee04a81a06b5621df91c046c05376289c"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000016.png",
+      "sha1": "fc99ac67a05b1173f8fd9d2d5c83ec17a7951c92"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000017.png",
+      "sha1": "06b27ae5246bce5fe06b0130a5cf43eda3ff6865"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000018.png",
+      "sha1": "1118f3b2867f8e9f8e9633d9b6e77494007e2ee5"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000019.png",
+      "sha1": "5d09a8bd2a9154bec97cbde2070704d9c1a43641"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000020.png",
+      "sha1": "dc9a7582c4dc0c81a446beff57eb9399f1717702"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000021.png",
+      "sha1": "8f755c70b8dbdadda05839fdff9eb50c53d5d3d9"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000022.png",
+      "sha1": "5edc69b95b11def730dbfa5638a951e2b883fb20"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000023.png",
+      "sha1": "b4f371562003b17c949cdb68297e11838c658c1e"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000024.png",
+      "sha1": "0abbe8aadfaee089c1f88482f31365a597de84fc"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000025.png",
+      "sha1": "0a575df461e5027914f39ed72b3a83fee0b0da89"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000026.png",
+      "sha1": "865f6d2bdf301e0300c0b9b0503d2e75aab6cd7a"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/split_effect_png/frame000027.png",
+      "sha1": "9ea866284d386e6bbb8b826bda2c05efc8aad629"
+    },
+    {
+      "path": "assets/effects/Makeup Look w: Slipt Screen Effect/textures/splitmask.png",
+      "sha1": "bb1e6077cb26bb73405a00e3cf998f03c477cdc1"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/Ping_Pong.deepar",
+      "sha1": "116b85b69cd831a8946e957ef8c8657eccf3af6b"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/hit.mp3",
+      "sha1": "f763768028bf99fa000c57960b14ff137edc1a46"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/models/paddleandball.fbx",
+      "sha1": "c648dedf7c163fd7445535d7a8002642ebb8691e"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/preview.png",
+      "sha1": "9d45754477f59e7ea3bee5af2d440ef827afb842"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/scripts/pingpongscript.js",
+      "sha1": "5e3f2b7eb4dc7506d7c065f14ba40d9b35bf4fb7"
+    },
+    {
+      "path": "assets/effects/Ping Pong Minigame/textures/paddle.jpeg",
+      "sha1": "aa185031ec83b80195b2a085112025074856eac2"
+    },
+    {
+      "path": "assets/effects/Pixel Heart Particles/8bitHearts.deepar",
+      "sha1": "d6d048c369cec2a943ad483b14681d1dd72f5bb0"
+    },
+    {
+      "path": "assets/effects/Pixel Heart Particles/preview.png",
+      "sha1": "667dd4b3119709c4dad9c4a353be8d44dc332385"
+    },
+    {
+      "path": "assets/effects/Pixel Heart Particles/textures/heart.png",
+      "sha1": "72cd966d1e2c74cf7131f38e7cf70c8eaef6235c"
+    },
+    {
+      "path": "assets/effects/Snail/Snail.deepar",
+      "sha1": "66865c0757c028b858a31efc43d67c7d34c0746f"
+    },
+    {
+      "path": "assets/effects/Snail/models/snail.fbx",
+      "sha1": "541ce63383788970f814253cdaf0d9c4846352b1"
+    },
+    {
+      "path": "assets/effects/Snail/preview.png",
+      "sha1": "e6008b2a812a35eddf2b2795992cb9fdd548b480"
+    },
+    {
+      "path": "assets/effects/Snail/textures/lut_mask3.png",
+      "sha1": "f841fc980ed1e8641f8377369eecb1c8716c6355"
+    },
+    {
+      "path": "assets/effects/Snail/textures/snail_LUT.png",
+      "sha1": "7544c210f1b4fb172980976c6ba02836c4fa6d25"
+    },
+    {
+      "path": "assets/effects/Snail/textures/snail_diffuse.png",
+      "sha1": "c21350c813d042c23856bcf1cad9912b558dfd8a"
+    },
+    {
+      "path": "assets/effects/Snail/textures/teethLUT.png",
+      "sha1": "25c2ccb85214a4157409fed40a39382d2daafcdc"
+    },
+    {
+      "path": "assets/effects/Snail/textures/teeth_mask2.png",
+      "sha1": "fa1197c4832e0972569c3155f534f8ea3347f1cf"
+    },
+    {
+      "path": "assets/effects/Stallone/Stallone.deepar",
+      "sha1": "e28b9a49242d968d5e194f7fecfa8e83c8b2882a"
+    },
+    {
+      "path": "assets/effects/Stallone/models/stallone.fbx",
+      "sha1": "0c9e7c1e190fea6629f9b675fbe3c2362b7ff8c1"
+    },
+    {
+      "path": "assets/effects/Stallone/preview.png",
+      "sha1": "f3a3652c0a05fdc308419c0760154b5b327fbc1b"
+    },
+    {
+      "path": "assets/effects/Stallone/shaders/matcap_camera_multiply/fs_matcap_camera_multiply.sc",
+      "sha1": "d7ac0b62b2926daccb292918c1e6e0b89b81633f"
+    },
+    {
+      "path": "assets/effects/Stallone/shaders/matcap_camera_multiply/matcap_camera_multiply.json",
+      "sha1": "c5f554af99aaeee551d3e23bdab1c581e0a80584"
+    },
+    {
+      "path": "assets/effects/Stallone/shaders/matcap_camera_multiply/varying.def.sc",
+      "sha1": "a6740635681ec7d9cde81cf0c02606d31e5514e8"
+    },
+    {
+      "path": "assets/effects/Stallone/shaders/matcap_camera_multiply/vs_matcap_camera_multiply.sc",
+      "sha1": "4ed098d10d391a028bfefd26048e9c64e3d22d7f"
+    },
+    {
+      "path": "assets/effects/Stallone/textures/multiply.png",
+      "sha1": "fd9b769ce1d4ae938d5679dfc3a4350e40b8332d"
+    },
+    {
+      "path": "assets/effects/Stallone/textures/normal_map.png",
+      "sha1": "b64fc027eee0702b16e2ce14cf06d174ee7c8102"
+    },
+    {
+      "path": "assets/effects/Stallone/textures/skin_matcap.png",
+      "sha1": "752317bc2a546dfdc1da08fe0f4012cf4f6263da"
+    },
+    {
+      "path": "assets/effects/Stallone/textures/spec.png",
+      "sha1": "cf02e75c8b548b16ee23071deac11a3acbe928bb"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/Vendetta_Mask.deepar",
+      "sha1": "d7c46e58d09a542699be5a55e8f3d92195bc54e1"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/models/mask.fbx",
+      "sha1": "488f5248e3e0ab72657171819f81097673b19e6d"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/preview.png",
+      "sha1": "4fc20e29bb7a0be1f845090c7ce22f5f970cf1a0"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/shaders/matcap_normal_texture/fs_matcap_normal_texture.sc",
+      "sha1": "19a49617979f3f8b02be9d20fe7ee38ec613ed3b"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/shaders/matcap_normal_texture/matcap_normal_texture.json",
+      "sha1": "33a71a6bb0ad49d9e2f88851d1756cd61d784754"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/shaders/matcap_normal_texture/varying.def.sc",
+      "sha1": "5fd3d29a74de74bb23b5981bd66d19ffe1d3d724"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/shaders/matcap_normal_texture/vs_matcap_normal_texture.sc",
+      "sha1": "da1ada527d75d5a85045ce6d3e1e38b7eacae308"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/textures/matcap_dark.png",
+      "sha1": "a43bf3a3ae8a4c147c7490e111e92c1ace3eeed9"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/textures/matcap_light.png",
+      "sha1": "de1fa05ecb7f18379658bc2b8d4de1a134556b21"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/textures/multiply.png",
+      "sha1": "8d515c904f2335aac8935aeb6445950ca59fb02c"
+    },
+    {
+      "path": "assets/effects/Vendetta Mask/textures/normal_map.png",
+      "sha1": "e96db3cf7d45c967b514e441e86096f3090d70ec"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/models/viking_helmet.fbx",
+      "sha1": "dfdfd4fae84df66f28c420e660020a975aa95e61"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/preview.png",
+      "sha1": "a39844e8dab402281bb1fdf4c8e0e9c370db5118"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/AO.jpg",
+      "sha1": "de5a35f2cbfe327b08254811b2ac852258265b35"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/diffuse.jpg",
+      "sha1": "d0bad12f2dd1648ba1f098cb092ac8756a9a70ac"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/metalness.jpg",
+      "sha1": "ee5ec2d9b8a70557b913099ab1ab680db7b76d64"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/normal_map.jpg",
+      "sha1": "eec5e1e9bbf19db6f40280a36400d5a6b5009b3d"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/roughness.jpg",
+      "sha1": "d1186324710d46c08c65f853de49ca0f53f2cd49"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/skybox1.png",
+      "sha1": "70ca2236f3f644ac65a661393f8e26531b85fbfb"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/skybox2.png",
+      "sha1": "b9e2df105acdcf6adb486f4218456d9a6958410d"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/textures/skybox3.png",
+      "sha1": "3d730458a219c8a1c8325b286ec711db249fe355"
+    },
+    {
+      "path": "assets/effects/Viking Helmet PBR/viking_helmet.deepar",
+      "sha1": "4fe4d10e9dcf910d87e2eb96135762c18c6d3bcd"
     }
   ]
 }

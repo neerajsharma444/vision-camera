@@ -2,8 +2,6 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import CameraScreen from '../Screens/CameraScreen';
-import OpenCamera from '../Screens/OpenCamera';
-import ImageScreen from '../Screens/ImageScreen';
 import TabNavigator from './TabNavigator';
 
 const Stack = createStackNavigator();

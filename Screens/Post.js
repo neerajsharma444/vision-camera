@@ -5,43 +5,72 @@ import {
   TouchableOpacity,
   View,
   Image,
+  Alert,
+  ScrollView,
+  KeyboardAvoidingView,
 } from 'react-native';
 import React, {useState} from 'react';
 import IonIcons from 'react-native-vector-icons/Ionicons';
+import database from '@react-native-firebase/database';
 
 const Post = ({navigation, route}) => {
   const {photo} = route.params ? route.params : {};
-  const [inputText, setInputText] = useState('');
+  console.log(photo, 'photuu');
   const [caption, setCaption] = useState('');
+  const [posts, setPosts] = useState([]);
 
   const openCamera = () => {
     navigation.navigate('CameraScreen');
   };
 
   const uploadPost = () => {
-    console.log(photo);
-    if (photo) {
-      setInputText(prevText =>
-        prevText
-          ? prevText + `\n![Uploaded Image](${photo})`
-          : `![Uploaded Image](${photo})`,
-      );
+    const user = {
+      uri: `data:${photo.mime};base64,${photo.data}`,
+      caption: caption,
+    };
+
+    if (photo && caption) {
+      database()
+        .ref('/users')
+        .push(user)
+        .then(() => {
+          console.log('User added successfully');
+        })
+        .catch(error => {
+          console.error('Error adding user to DB:', error);
+        });
+
+      const newPosts = [...posts, {photo, caption}];
+      setPosts(newPosts);
+      navigation.navigate('Home', {posts: newPosts});
+      navigation.setParams({photo: null});
+      setCaption('');
+    } else {
+      Alert.alert('Please upload photo and caption');
     }
-    navigation.navigate('Home', {photo, caption});
-    navigation.setParams({photo: null});
-    setCaption('');
   };
 
   return (
-    <View style={styles.mainContainer}>
+    <ScrollView style={styles.mainContainer}>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Add Image</Text>
         {photo ? (
-          <Image style={styles.image} source={{uri: `file://${photo.path}`}} />
+          <Image
+            style={styles.image}
+            source={{uri: `data:${photo.mime};base64,${photo.data}`}}
+          />
         ) : (
           <>
-            <View>
-              <Text style={{fontSize: 18, marginTop: 10}}>
+            <View
+              style={{
+                margin: 15,
+                alignItems: 'center',
+                // backgroundColor: 'green',
+              }}>
+              <Text
+                style={{
+                  fontSize: 18,
+                }}>
                 Please capture or upload image first....
               </Text>
             </View>
@@ -71,7 +100,7 @@ const Post = ({navigation, route}) => {
           <Text style={styles.uploadTxt}>Upload</Text>
         </TouchableOpacity>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
@@ -91,19 +120,8 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 
-  inputTxt: {
-    height: 100,
-    marginTop: 10,
-    width: '100%',
-    paddingLeft: 10,
-    borderRadius: 10,
-    borderWidth: 0.5,
-    borderColor: '#006175',
-    textAlignVertical: 'top',
-  },
-
   image: {
-    height: 150,
+    height: 300,
     width: '100%',
     marginTop: 10,
     borderRadius: 10,
@@ -117,13 +135,6 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#000000',
     fontFamily: 'Poppins-Medium',
-  },
-
-  imageContainer: {
-    // height: 100,
-    backgroundColor: 'black',
-    // flexDirection: 'row',
-    // alignItems: 'center',
   },
 
   captionInput: {
@@ -145,6 +156,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    // backgroundColor: 'yellow',
   },
 
   uploadButton: {

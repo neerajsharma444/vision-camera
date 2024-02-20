@@ -88,6 +88,7 @@ const CameraScreen = ({navigation}) => {
       width: photo?.width || 300,
       height: photo?.height || 400,
       cropping: true,
+      includeBase64: true,
     })
       .then(image => {
         setPhoto(image);
@@ -108,7 +109,12 @@ const CameraScreen = ({navigation}) => {
       saveToGallery: true,
       base64Encoded: true,
     });
+
     console.log('Image captured:', photo);
+    const result = await fetch(`file://${photo.path}`);
+    console.log('result', result);
+    const data = await result.blob();
+    console.log('DATA', data);
     setPhoto(photo);
   };
 
@@ -120,8 +126,7 @@ const CameraScreen = ({navigation}) => {
     if (!photo) {
       return;
     }
-    const result = await fetch(`file://${photo.path}`);
-    console.log('result', photo);
+
     navigation.navigate('Post', {photo: photo});
   };
 

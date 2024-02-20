@@ -48,31 +48,6 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>UIAppFonts</key>
-	<array>
-		<string>Borel-Regular.ttf</string>
-		<string>DancingScript-Bold.ttf</string>
-		<string>DancingScript-Medium.ttf</string>
-		<string>DancingScript-Regular.ttf</string>
-		<string>DancingScript-SemiBold.ttf</string>
-		<string>Estonia-Regular.ttf</string>
-		<string>GrechenFuemen-Regular.ttf</string>
-		<string>GreyQo-Regular.ttf</string>
-		<string>IngridDarling-Regular.ttf</string>
-		<string>Lugrasimo-Regular.ttf</string>
-		<string>Lumanosimo-Regular.ttf</string>
-		<string>MoonDance-Regular.ttf</string>
-		<string>NovaSquare-Regular.ttf</string>
-		<string>Petemoss-Regular.ttf</string>
-		<string>PlaypenSans-Bold.ttf</string>
-		<string>PlaypenSans-ExtraBold.ttf</string>
-		<string>PlaypenSans-ExtraLight.ttf</string>
-		<string>PlaypenSans-Light.ttf</string>
-		<string>PlaypenSans-Medium.ttf</string>
-		<string>PlaypenSans-Regular.ttf</string>
-		<string>PlaypenSans-SemiBold.ttf</string>
-		<string>PlaypenSans-Thin.ttf</string>
-		<string>Tapestry-Regular.ttf</string>
-		<string>TwinkleStar-Regular.ttf</string>
-	</array>
+	<array/>
 </dict>
 </plist>
