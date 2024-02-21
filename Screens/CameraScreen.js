@@ -8,8 +8,8 @@ import {
 } from 'react-native-vision-camera';
 import Entypo from 'react-native-vector-icons/Entypo';
 import ImagePicker from 'react-native-image-crop-picker';
-import BlurImage from '../Components/Filters/BlurImage';
-import MatrixColor from '../Components/Filters/MatrixColor';
+import {GrayscaleImage} from '../Components/Filters/GrayscaleImage';
+import {Grayscale} from 'react-native-color-matrix-image-filters'; // Import Grayscale filter
 
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
@@ -24,7 +24,8 @@ const CameraScreen = ({navigation}) => {
     hasPermission: microphonePermission,
     requestPermission: requestMicrophonePermission,
   } = useMicrophonePermission();
-  const [selectedFilters, setSelectedFilters] = useState([]);
+  const [showFullImage, setShowFullImage] = useState(false); // State to control full image display
+  const [isGrayscale, setIsGrayscale] = useState(false); // State to control grayscale filter
 
   useEffect(() => {
     if (!hasPermission) {
@@ -38,7 +39,6 @@ const CameraScreen = ({navigation}) => {
   useEffect(() => {
     const cameraScreen = navigation.addListener('focus', () => {
       setPhoto(undefined); // Reset photo state when navigating back to CameraScreen
-      setSelectedFilters([]); // Reset selected filters when navigating back
     });
 
     return cameraScreen;
@@ -100,32 +100,13 @@ const CameraScreen = ({navigation}) => {
     setCameraType(cameraType === 'back' ? 'front' : 'back');
   };
 
-  const applyFilter = filter => {
-    setSelectedFilters(prevFilters => [...prevFilters, filter]);
-  };
-
   const uploadImage = async () => {
     if (!photo) {
       return;
     }
-
-    let imageUri = photo.path;
-
-    // Apply selected filters
-    for (const filter of selectedFilters) {
-      if (filter === 'blur') {
-        const blurredImage = await BlurImage.applyBlur(imageUri);
-        imageUri = `file://${blurredImage.uri}`;
-      } else if (filter === 'color') {
-        const coloredImage = await MatrixColor.applyColorMatrix(imageUri);
-        imageUri = `file://${coloredImage.uri}`;
-      }
-    }
-
-    // Navigate to Post screen with the updated image URI
-    console.log('Uploading image:', imageUri);
-
-    navigation.navigate('Post', {photo: {...photo, path: imageUri}});
+    const result = await fetch(`file://${photo.path}`);
+    console.log('result...', result);
+    navigation.navigate('Post', {photo: photo});
   };
 
   return (
@@ -138,7 +119,6 @@ const CameraScreen = ({navigation}) => {
         isActive={showCamera && !photo} // for showing camera disable or enable
         onPictureTaken={data => {
           setPhoto(data.image);
-          setSelectedFilters([]); // Reset selected filters when a new photo is taken
         }}
       />
 
@@ -156,11 +136,43 @@ const CameraScreen = ({navigation}) => {
             color="white"
             style={{top: 10, left: 10, position: 'absolute'}}
           />
-          {/* <View style={styles.uploadImageView}>
+          <View style={styles.uploadImageView}>
+            <TouchableOpacity
+              onPress={() => setShowFullImage(true)} // Toggle full image display
+              style={{
+                height: 65,
+                width: 65,
+                borderRadius: 100,
+                borderColor: '#fff',
+                borderWidth: 5,
+                alignSelf: 'center',
+              }}>
+              {showFullImage ? ( // Check if full image display is active
+                <GrayscaleImage // Render GrayscaleImage component
+                  style={{
+                    height: 60,
+                    borderRadius: 100,
+                    width: 60,
+                    margin: 2,
+                  }}
+                  imageUri={`file://${photo.path}`}
+                />
+              ) : (
+                <Image // Render original image
+                  style={{
+                    height: '100%',
+                    borderRadius: 100,
+                    width: '100%',
+                    margin: 2,
+                  }}
+                  source={{uri: `file://${photo.path}`}}
+                />
+              )}
+            </TouchableOpacity>
             <TouchableOpacity onPress={uploadImage}>
               <Text style={styles.uploadImageText}>Upload</Text>
             </TouchableOpacity>
-          </View> */}
+          </View>
         </>
       ) : (
         <>
@@ -222,35 +234,16 @@ const CameraScreen = ({navigation}) => {
           </View>
         </>
       )}
-
-      {/* Render filters */}
-      {photo && !selectedFilters.length && (
-        <View
-          style={{
-            flexDirection: 'row',
-            justifyContent: 'center',
-            position: 'absolute',
-            bottom: '10%',
-            left: 0,
-            right: 0,
-          }}>
-          <TouchableOpacity
-            onPress={() => applyFilter('blur')}
-            style={styles.filterButton}>
-            <Text style={styles.filterButtonText}>Blur</Text>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={() => applyFilter('color')}
-            style={styles.filterButton}>
-            <Text style={styles.filterButtonText}>Color</Text>
-          </TouchableOpacity>
-        </View>
-      )}
-      {photo && selectedFilters.includes('blur') && (
-        <BlurImage imageUrl={`file://${photo.path}`} />
-      )}
-      {photo && selectedFilters.includes('color') && (
-        <MatrixColor imageUrl={`file://${photo.path}`} />
+      {photo && showFullImage && (
+        <TouchableOpacity
+          onPress={() => setShowFullImage(false)} // Hide full image when tapped
+          style={StyleSheet.absoluteFill}>
+          <Image
+            source={{uri: `file://${photo.path}`}}
+            style={{flex: 1, width: null, height: null}}
+            resizeMode="contain"
+          />
+        </TouchableOpacity>
       )}
     </View>
   );
@@ -283,18 +276,5 @@ const styles = StyleSheet.create({
     right: 10,
     top: 10,
     padding: 10,
-  },
-
-  filterButton: {
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    borderRadius: 8,
-    paddingHorizontal: 20,
-    paddingVertical: 10,
-    marginHorizontal: 10,
-  },
-
-  filterButtonText: {
-    fontSize: 16,
-    color: 'white',
   },
 });
