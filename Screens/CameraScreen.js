@@ -1,5 +1,13 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+  Image,
+  ActivityIndicator,
+  ScrollView,
+} from 'react-native';
 import {
   Camera,
   useCameraDevice,
@@ -8,6 +16,8 @@ import {
 } from 'react-native-vision-camera';
 import Entypo from 'react-native-vector-icons/Entypo';
 import ImagePicker from 'react-native-image-crop-picker';
+import {CombinedFiltersImage, GrayscaledImage} from '../Filter';
+import Scroll from '../Scroll';
 
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
@@ -159,6 +169,7 @@ const CameraScreen = ({navigation}) => {
             style={{top: 10, left: 10, position: 'absolute'}}
           />
           <View style={styles.uploadImageView}>
+            <Scroll url={`file://${photo.path}`} />
             <TouchableOpacity onPress={uploadImage}>
               <Text style={styles.uploadImageText}>Upload</Text>
             </TouchableOpacity>
@@ -257,6 +268,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     color: '#00FFFF',
+    marginTop: 10,
   },
 
   flashButton: {

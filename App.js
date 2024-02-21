@@ -4,6 +4,8 @@ import {Provider} from 'react-redux';
 import SplashScreen from 'react-native-splash-screen';
 import RootNavigator from './Navigation/RootNavigator';
 import {handleDatabase} from './handleDatabase';
+import {Filter} from './Filter';
+import Test from './Test';
 
 // handleDatabase();
 
@@ -14,7 +16,7 @@ const App = () => {
 
   return (
     // <Provider store={store}>
-    <RootNavigator />
+    <Test />
     // </Provider>
   );
 };

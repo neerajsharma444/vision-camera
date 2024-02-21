@@ -25,6 +25,7 @@
     "react-native": "0.73.2",
     "react-native-actions-sheet": "^0.9.1",
     "react-native-camera-kit": "^13.0.0",
+    "react-native-color-matrix-image-filters": "^6.0.7",
     "react-native-gesture-handler": "^2.14.1",
     "react-native-image-crop-picker": "^0.40.3",
     "react-native-keyboard-aware-scroll-view": "^0.9.5",
