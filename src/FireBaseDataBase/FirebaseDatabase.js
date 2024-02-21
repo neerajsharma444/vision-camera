@@ -25,14 +25,14 @@ export const handleDatabase = () => {
 const addData = () => {
   const user_data = [
     {
-      cap: 'iobject1 of array 1',
-      img: 'imageimageimageimage',
-      e_mail: 'hello@gmail.com',
+      cap: '1',
+      img: '1',
+      e_mail: 'rahul@gmail.com',
     },
     {
-      name: 'aman',
+      name: 'rahul',
       image: 'b64',
-      email: 'aman@gmail.com',
+      email: 'rahul1@gmail.com',
     },
   ];
 
@@ -46,7 +46,7 @@ const addData = () => {
   //   .then(() => console.log('Data set.'));
 
   database()
-    .ref('/aman')
+    .ref('/rahul')
     // .push()
     .set(user_data)
     .then(() => {

@@ -19,12 +19,10 @@ import ImagePicker from 'react-native-image-crop-picker';
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
   const [photo, setPhoto] = useState();
-  const [video, setVideo] = useState();
   const [flash, setFlash] = useState('off');
   const [showCamera, setShowCamera] = useState(true);
   const [cameraType, setCameraType] = useState('back');
   const device = useCameraDevice(cameraType);
-  const [isRecording, setIsRecording] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
 
   const {
@@ -72,25 +70,6 @@ const CameraScreen = ({navigation}) => {
     setFlash(flash === 'off' ? 'on' : 'off');
   };
 
-  const onStartRecording = async () => {
-    if (!camera.current) {
-      return;
-    }
-    setIsRecording(true);
-    camera.current.startRecording({
-      onRecordingFinished: video => {
-        setIsRecording(false);
-        setVideo(video);
-        console.log(video);
-      },
-      onRecordingError: error => {
-        console.log(error);
-        setIsRecording(false);
-      },
-    });
-    console.log('Recording started:');
-  };
-
   const openImagePicker = () => {
     ImagePicker.openPicker({
       width: photo?.width || 300,
@@ -102,15 +81,15 @@ const CameraScreen = ({navigation}) => {
         setPhoto(image);
       })
       .catch(error => {
-        console.log('Error picking image:', error);
+        if (ImagePicker.isCancel(error)) {
+          console.log('User cancelled image selection');
+        } else {
+          console.log('Error picking image:', error);
+        }
       });
   };
 
   const captureButton = async () => {
-    if (isRecording) {
-      camera.current?.stopRecording();
-      return;
-    }
     console.log('Taking Picture');
     const photo = await camera.current.takePhoto({
       flash,
@@ -130,7 +109,9 @@ const CameraScreen = ({navigation}) => {
       return;
     }
     const result = await fetch(`file://${photo.path}`);
-    console.log('result', photo);
+    console.log('result', result);
+    // const data = await result.blob();
+    // console.log('data', data);
     navigation.navigate('Post', {photo: photo});
   };
 
@@ -210,7 +191,6 @@ const CameraScreen = ({navigation}) => {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={captureButton}
-              onLongPress={onStartRecording}
               style={{justifyContent: 'center'}}>
               <Image
                 source={require('../images/capture.png')}
