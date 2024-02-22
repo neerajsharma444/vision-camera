@@ -164,7 +164,7 @@ const CameraScreen = ({navigation}) => {
           />
           <View style={styles.uploadImageView}>
             <TouchableOpacity onPress={uploadImage}>
-              <Text style={styles.uploadImageText}>Upload</Text>
+              <Text style={styles.uploadImageText}>Save</Text>
             </TouchableOpacity>
           </View>
         </>

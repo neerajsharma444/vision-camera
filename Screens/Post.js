@@ -7,19 +7,20 @@ import {
   Image,
   Alert,
   ScrollView,
-  KeyboardAvoidingView,
 } from 'react-native';
 import React, {useState} from 'react';
 import IonIcons from 'react-native-vector-icons/Ionicons';
 import database from '@react-native-firebase/database';
 
 const Post = ({navigation, route}) => {
-  const {photo} = route.params ? route.params : {};
+  // const {photo} = route.params ? route.params : {};
+  const photo = route.params?.photo;
   const [caption, setCaption] = useState('');
   const [posts, setPosts] = useState([]);
+  console.log(photo, 'photo');
 
   const openCamera = () => {
-    navigation.navigate('CameraScreen');
+    navigation.navigate('Home');
   };
 
   const uploadPost = () => {
@@ -28,21 +29,21 @@ const Post = ({navigation, route}) => {
       caption: caption,
     };
 
-    if (photo && caption) {
+    if (photo) {
       database()
-        .ref('/users')
+        .ref('/posts')
         .push(user)
         .then(() => {
-          console.log('User added successfully');
+          console.log('Post added successfully');
         })
         .catch(error => {
-          console.error('Error adding user to DB:', error);
+          console.error('Error adding post to DB:', error);
         });
 
       const newPosts = [...posts, {photo, caption}];
+      // const newPosts = [...posts, {...user}];
       setPosts(newPosts);
       navigation.navigate('Home', {posts: newPosts});
-      navigation.setParams({photo: null});
       setCaption('');
     } else {
       Alert.alert('Please upload photo and caption');
@@ -57,6 +58,7 @@ const Post = ({navigation, route}) => {
           <Image
             style={styles.image}
             source={{uri: `data:${photo.mime};base64,${photo.data}`}}
+            // source={{uri: `file://${photo.path}`}}
           />
         ) : (
           <>
@@ -96,7 +98,7 @@ const Post = ({navigation, route}) => {
 
       <View>
         <TouchableOpacity style={styles.uploadButton} onPress={uploadPost}>
-          <Text style={styles.uploadTxt}>Upload</Text>
+          <Text style={styles.uploadTxt}>Post</Text>
         </TouchableOpacity>
       </View>
     </ScrollView>
@@ -163,13 +165,13 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 20,
     backgroundColor: '#1C6758',
-    justifyContent: 'center',
+    // justifyContent: 'center',
   },
 
   uploadTxt: {
     fontSize: 20,
     color: '#FFFFFF',
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     paddingVertical: 10,
     textAlign: 'center',
   },
