@@ -17,6 +17,7 @@ const Post = ({navigation, route}) => {
   const photo = route.params?.photo;
   const [caption, setCaption] = useState('');
   const [posts, setPosts] = useState([]);
+  const hello = `data:${photo.mime};base64,${photo.data}`;
   console.log(photo, 'photo');
 
   const openCamera = () => {
@@ -25,7 +26,8 @@ const Post = ({navigation, route}) => {
 
   const uploadPost = () => {
     const user = {
-      uri: `data:${photo.mime};base64,${photo.data}`,
+      // uri: `data:${photo.mime};base64,${photo.data}`,
+      uri: photo,
       caption: caption,
     };
 
@@ -57,7 +59,10 @@ const Post = ({navigation, route}) => {
         {photo ? (
           <Image
             style={styles.image}
-            source={{uri: `data:${photo.mime};base64,${photo.data}`}}
+            source={{
+              uri: photo,
+              // uri: `data:${photo.mime};base64,${photo.data}`
+            }}
             // source={{uri: `file://${photo.path}`}}
           />
         ) : (

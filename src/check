@@ -6,6 +6,7 @@ import {
   View,
   Image,
   ActivityIndicator,
+  ScrollView,
 } from 'react-native';
 import {
   Camera,
@@ -16,16 +17,16 @@ import {
 import Entypo from 'react-native-vector-icons/Entypo';
 import ImagePicker from 'react-native-image-crop-picker';
 import RNFS from 'react-native-fs';
+import {CombinedFiltersImage, GrayscaledImage} from '../Filter';
+import Scroll from '../Scroll';
 
 const CameraScreen = ({navigation}) => {
   const camera = useRef(null);
   const [photo, setPhoto] = useState();
-  const [video, setVideo] = useState();
   const [flash, setFlash] = useState('off');
   const [showCamera, setShowCamera] = useState(true);
   const [cameraType, setCameraType] = useState('back');
   const device = useCameraDevice(cameraType);
-  const [isRecording, setIsRecording] = useState(false);
   const {hasPermission, requestPermission} = useCameraPermission();
 
   const {
@@ -41,7 +42,6 @@ const CameraScreen = ({navigation}) => {
       requestMicrophonePermission();
     }
   }, [hasPermission, microphonePermission]);
-
   console.log('After requesting Camera Permission:', hasPermission);
   console.log('After requesting Microphone Permission:', microphonePermission);
 
@@ -59,7 +59,12 @@ const CameraScreen = ({navigation}) => {
 
   if (device == null) {
     return (
-      <Text style={{fontSize: 28, color: 'black', alignSelf: 'center'}}>
+      <Text
+        style={{
+          fontSize: 28,
+          color: 'black',
+          alignSelf: 'center',
+        }}>
         Camera not available
       </Text>
     );
@@ -67,25 +72,6 @@ const CameraScreen = ({navigation}) => {
 
   const flashButton = () => {
     setFlash(flash === 'off' ? 'on' : 'off');
-  };
-
-  const onStartRecording = async () => {
-    if (!camera.current) {
-      return;
-    }
-    setIsRecording(true);
-    camera.current.startRecording({
-      onRecordingFinished: video => {
-        setIsRecording(false);
-        setVideo(video);
-        console.log(video);
-      },
-      onRecordingError: error => {
-        console.log(error);
-        setIsRecording(false);
-      },
-    });
-    console.log('Recording started:');
   };
 
   const openImagePicker = () => {
@@ -108,16 +94,13 @@ const CameraScreen = ({navigation}) => {
   };
 
   const captureButton = async () => {
-    if (isRecording) {
-      camera.current?.stopRecording();
-      return;
-    }
     console.log('Taking Picture');
     const photo = await camera.current.takePhoto({
       flash,
       saveToGallery: true,
       base64Encoded: true,
     });
+
     console.log('Image captured:', photo);
     setPhoto(photo);
     convertToBase64(photo);
@@ -164,7 +147,7 @@ const CameraScreen = ({navigation}) => {
       {photo ? (
         <>
           <Image
-            source={{uri: `file://${photo.path}`}}
+            source={{uri: `file://${photo}`}}
             style={StyleSheet.absoluteFill}
           />
 
@@ -176,6 +159,7 @@ const CameraScreen = ({navigation}) => {
             style={{top: 10, left: 10, position: 'absolute'}}
           />
           <View style={styles.uploadImageView}>
+            {/* <Scroll url={`file://${photo}`} /> */}
             <TouchableOpacity onPress={uploadImage}>
               <Text style={styles.uploadImageText}>Save</Text>
             </TouchableOpacity>
@@ -223,7 +207,6 @@ const CameraScreen = ({navigation}) => {
             </TouchableOpacity>
             <TouchableOpacity
               onPress={captureButton}
-              onLongPress={onStartRecording}
               style={{justifyContent: 'center'}}>
               <Image
                 source={require('../images/capture.png')}
@@ -274,6 +257,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     textAlign: 'center',
     color: '#00FFFF',
+    marginTop: 10,
   },
 
   flashButton: {
@@ -283,11 +267,16 @@ const styles = StyleSheet.create({
     padding: 10,
   },
 
+  img: {
+    height: 50,
+    width: 50,
+  },
+
   cameraTxt: {
     fontSize: 20,
     color: '#FFFFFF',
     fontWeight: 'bold',
-    alignSelf: 'flex-start',
+    textAlign: 'center',
     paddingVertical: 10,
   },
 });

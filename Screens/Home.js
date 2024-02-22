@@ -40,7 +40,7 @@ const Home = ({route, navigation}) => {
             <Image
               style={styles.image}
               source={{uri: item.uri}}
-              resizeMode="contain"
+              resizeMode="cover"
             />
             <Text style={styles.caption}>{item.caption}</Text>
           </View>
@@ -77,38 +77,40 @@ const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
     padding: 20,
-    // backgroundColor: 'green',
-  },
-
-  heading: {
-    fontSize: 30,
-    color: 'white',
-    marginBottom: 10,
-    textAlign: 'center',
-    fontFamily: 'TwinkleStar-Regular',
+    backgroundColor: 'white',
   },
 
   postContainer: {
-    flex: 1,
     marginBottom: 20,
-    // backgroundColor: 'green',
   },
 
   imageContainer: {
     flex: 1,
-    marginBottom: 5,
+    borderRadius: 10,
+    backgroundColor: 'white',
+    width: '100%',
+    shadowOffset: {width: 0, height: 2},
+    shadowOpacity: 0.5,
+    shadowRadius: 6,
+    shadowColor: '#000',
+    borderWidth: 1,
+    borderColor: 'rgba(0, 0, 0, 0.1)',
+    borderBottomWidth: 2,
+    elevation: 5,
+    marginBottom: 10,
   },
 
   image: {
     width: '100%',
-    height: 500,
-    // borderRadius: 10,
-    // backgroundColor: 'green',
+    height: 250,
+
+    borderRadius: 10,
   },
 
   caption: {
-    fontSize: 18,
+    fontSize: 16,
+    margin: 5,
     color: 'black',
-    marginTop: 10,
+    fontStyle: 'normal',
   },
 });
